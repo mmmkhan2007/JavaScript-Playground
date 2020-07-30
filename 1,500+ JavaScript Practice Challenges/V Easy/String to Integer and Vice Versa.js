@@ -33,14 +33,35 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 /*  Solution 1   */
 
+function toInt(str) {
+	var a = parseInt(str);
+	return a;
+}
 
+function toStr(int) {
+	return int.toString();
+}
 
 
 
 /*  Solution 2   */
 
 
+const toInt = str => Number(str);
 
+const toStr = num => String(num);
+
+const toInt = (str) => parseInt(str);
+const toStr = (int) => int.toString();
 
 
 /*  Solution 3   */
+
+
+function toInt(str) {
+	return parseInt(str, 10);
+}
+
+function toStr(int) {
+	return int.toString();
+}
