@@ -36,6 +36,7 @@ yeah_nope(false) ➞ "nope"
 */
 
 
+/*  Solution 1   */
 
 function yeah_nope(bool) {
 	return bool ? "yeah" : "nope";
@@ -46,6 +47,7 @@ function yeah_nope(bool) {
 
 
 
+/*  Solution 2   */
 
 function yeah_nope(bool) {
 	return bool === true ? 'yeah' : 'nope'

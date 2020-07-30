@@ -22,15 +22,18 @@ Don't overthink this challenge; it's not supposed to be hard.
 */
 
 
+/*  Solution 1   */
 function squared(b) {
 	return b*b;
 }
 
 
+/*  Solution 2   */
 
 const squared = num => num * num;
 
 
+/*  Solution 3   */
 
 function squared(b) {
 	let ans;

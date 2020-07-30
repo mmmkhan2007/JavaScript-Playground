@@ -22,6 +22,7 @@ If you're really stuck, unlock solutions in the Solutions tab.
 */
 
 
+/*  Solution 1   */
 
 function addition(num) {
 	return ++num
@@ -29,4 +30,5 @@ function addition(num) {
 
 
 
+/*  Solution 2   */
 const addition = (num) => num + 1

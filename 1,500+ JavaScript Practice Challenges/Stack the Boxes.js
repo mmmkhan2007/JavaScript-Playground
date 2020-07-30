@@ -22,9 +22,11 @@ stackBoxes(2) ➞ 4
 
 
 
+/*  Solution 1   */
 stackBoxes = n => n*n;
 
 
+/*  Solution 2   */
 
 
 function stackBoxes(n) {
@@ -36,6 +38,7 @@ function stackBoxes(n) {
 }
 
 
+/*  Solution 3   */
 
 
 

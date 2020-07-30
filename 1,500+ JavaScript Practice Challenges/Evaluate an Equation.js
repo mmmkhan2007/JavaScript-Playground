@@ -23,16 +23,20 @@ The method used to solve this challenge should not be used in practice. However,
 */
 
 
+/*  Solution 1   */
 
 function eq(evaluate) {
 	return eval(evaluate);
 }
 
 
+/*  Solution 2   */
 
 
 const eq = evaluate => eval(evaluate)
 
+
+/*  Solution 3   */
 
 function eq(evaluate) {
 	var a =  eval(evaluate);

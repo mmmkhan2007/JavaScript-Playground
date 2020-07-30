@@ -24,6 +24,7 @@ Tests are case sensitive (return "even" or "odd" in lowercase).
 */
 
 
+/*  Solution 1   */
 
 function isEvenOrOdd(num) {
     return num % 2 ? 'odd' : 'even';
@@ -31,6 +32,7 @@ function isEvenOrOdd(num) {
 
 
 
+/*  Solution 2   */
   
 
 
@@ -38,12 +40,14 @@ function isEvenOrOdd(num) {
 
 
 
+/*  Solution 3   */
 
 
   isEvenOrOdd = (n) => [`even`, `odd`][n & 1]
 
 
 
+/*  Solution 4   */
 
 
   function isEvenOrOdd(num) {

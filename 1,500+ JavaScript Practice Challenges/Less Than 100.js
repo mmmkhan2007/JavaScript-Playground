@@ -19,11 +19,13 @@ lessThan100(83, 34) ➞ false
 
 */
 
+/*  Solution 1   */
 
 const lessThan100 = (a, b) => (a + b) < 100
 
 
 
+/*  Solution 2   */
 function lessThan100(a, b) {
     if(a + b < 100){
         return true;
@@ -31,6 +33,8 @@ function lessThan100(a, b) {
    return false
 }
 
+
+/*  Solution 3   */
 
 function lessThan100(a, b) {
 	if (a + b < 100) {

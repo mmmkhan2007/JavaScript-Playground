@@ -15,11 +15,15 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 */
 
+
+/*  Solution 1   */
+
 function convert(hours, minutes) {
 	return ((hours*60) + minutes) * 60
 }
 
 
+/*  Solution 2   */
 
 function convert(hours, minutes) {
 	var hour = hours * 3600;
@@ -29,6 +33,7 @@ function convert(hours, minutes) {
 	
 }
 
+/*  Solution 3   */
 
 function convert(hours, minutes) {
 	var seconds = (hours * 60 *60) + (minutes * 60);

@@ -29,9 +29,11 @@ Remember that the farmer wants to know the total number of legs and not the tota
 
 
 
+/*  Solution 1   */
 const animals = (chickens, cows, pigs) => chickens * 2 + cows * 4 + pigs * 4;
 
 
+/*  Solution 2   */
 
 function animals(chickens, cows, pigs) {
 	let totalLegs = (chickens * 2) + (cows * 4) + (pigs * 4);
@@ -39,6 +41,7 @@ function animals(chickens, cows, pigs) {
 }
 
 
+/*  Solution 3   */
 function animals(chickens, cows, pigs) {
 	chickens *= 2;
 	cows *= 4;
@@ -47,6 +50,7 @@ function animals(chickens, cows, pigs) {
 }
 
 
+/*  Solution 4   */
 
 function animals(chickens, cows, pigs) {
 	return chickens*2 + cows*4 + pigs*4;

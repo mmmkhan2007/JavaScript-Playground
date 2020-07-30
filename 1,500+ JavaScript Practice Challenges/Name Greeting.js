@@ -25,14 +25,17 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 
 
+/*  Solution 1   */
 const helloName = name => `Hello ${name}!`
 
 
 
+/*  Solution 2   */
 const helloName = name => "Hello " + name + "!"
 
 
 
+/*  Solution 3   */
 
 const helloName = name => {
 	return `Hello ${name}!`;

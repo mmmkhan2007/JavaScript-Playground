@@ -22,12 +22,17 @@ Check the Resources tab for info on recursion.
 
 */
 
+
+
+/*  Solution 1   */
 const length = ({ length }) => length;
 
+/*  Solution 2   */
 
 const length = (str) => {
 	return str.length
 }
 
 
+/*  Solution 3   */
 const length = str => str == '' ? 0 : length(str.substring(1)) + 1;

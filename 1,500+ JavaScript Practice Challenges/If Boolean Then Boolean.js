@@ -40,9 +40,11 @@ function legalAge(age) {
 */
 
 
+/*  Solution 1   */
 const isEven = n => !(n % 2);
 
 
+/*  Solution 2   */
 function isEven(n) {
 	return n % 2 == 0
 }

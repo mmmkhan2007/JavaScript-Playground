@@ -20,10 +20,13 @@ equation("1+1+1+1+1") ➞ 5
 
 
 
+/*  Solution 1   */
+
 function equation(s) {
 	return eval(s);
 }
 
 
+/*  Solution 2  */
 
 const equation = eval;

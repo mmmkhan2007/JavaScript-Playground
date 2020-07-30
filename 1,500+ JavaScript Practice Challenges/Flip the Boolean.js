@@ -21,14 +21,17 @@ flipBool(0) ➞ 1
 */
 
 
+/*  Solution 1   */
 const flipBool=b=> b ? 0 : 1;
 
 
+/*  Solution 2   */
 
 function flipBool(b) {
 	return (!b)*1;
 }
 
+/*  Solution 3   */
 
 
 function flipBool(b) {
@@ -36,11 +39,13 @@ function flipBool(b) {
 }
 
 
+/*  Solution 4   */
 
 
 flipBool = b => !b + 0
 
 
+/*  Solution 5   */
 
 function flipBool(b) {
 	return (b)? 0:1;
@@ -48,6 +53,7 @@ function flipBool(b) {
 
 
 
+/*  Solution 6   */
 
 function flipBool(b) {
     return b === true || b === 1 ? 0 : 1;

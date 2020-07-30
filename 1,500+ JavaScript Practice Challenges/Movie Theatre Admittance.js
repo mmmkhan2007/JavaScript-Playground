@@ -26,6 +26,7 @@ isSupervised is a boolean.
 */
 
 
+/*  Solution 1   */
 function acceptIntoMovie(age, isSupervised) {
     return age >= 15 || isSupervised
   }
@@ -36,6 +37,7 @@ function acceptIntoMovie(age, isSupervised) {
 
 
 
+/*  Solution 2   */
 
   const acceptIntoMovie = (age, parent) => parent || (age >= 15);
 
@@ -47,6 +49,7 @@ function acceptIntoMovie(age, isSupervised) {
 
 
 
+/*  Solution 3   */
 
 
   acceptIntoMovie=(age, isSupervised) => age>=15 || isSupervised == true;

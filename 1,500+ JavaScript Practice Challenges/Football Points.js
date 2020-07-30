@@ -21,15 +21,18 @@ Inputs will be numbers greater than or equal to 0.
 */
 
 
+/*  Solution 1   */
 
 function footballPoints(wins, draws, losses) {
     return wins*3 + draws;
 }
 
+/*  Solution 2   */
 
 const footballPoints = (a,b,c)=> a*3+b;
 
 
+/*  Solution 3   */
 function footballPoints(wins, draws, losses) {
 	return (wins * 3 ) + (draws * 1) + (losses * 0);
 }

@@ -20,16 +20,18 @@ Don't forget to return the result.
 
 */
 
+/*  Solution 1   */
 
 function isSameNum(num1, num2) {
 	return num1 === num2
 }
 
-
-
+/*  Solution 2   */
 
 const isSameNum = (num1, num2) => num1 === num2;
 
+
+/*  Solution 3   */
 
 function isSameNum(num1, num2) {
 	if(num1 === num2) {

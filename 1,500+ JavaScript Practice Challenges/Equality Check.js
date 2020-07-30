@@ -35,4 +35,6 @@ If you're really stuck, unlock solutions in the Solutions tab.
 */
 
 
+/*  Solution 1   */
+
 const checkEquality = (a, b) => a === b;

@@ -21,17 +21,20 @@ All numbers will be whole numbers.
 */
 
 
+/*  Solution 1   */
 function stringInt(str) {
 	return parseInt(str);
 }
 
 
+/*  Solution 2   */
 
 const stringInt = s => +s;
 
 
 
 
+/*  Solution 3   */
 
 
 

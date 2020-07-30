@@ -22,6 +22,9 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 */
 
+
+/*  Solution 1   */
+
 function addition(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
         return "Sorry but you didn't pass two numbers.";
@@ -30,9 +33,13 @@ function addition(a, b) {
 }
 
 
+
+/*  Solution 2   */
+
 const addition = (a, b) => a + b;
 
 
+/*  Solution 3   */
 
 function addition( a, b ) {
     return a+b ;

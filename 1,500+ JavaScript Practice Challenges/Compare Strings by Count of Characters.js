@@ -20,14 +20,23 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 */
 
+
+
+
+
+/*  Solution 1   */
+
 function comp(str1, str2) {
 	return str1.length === str2.length;
 }
 
 
+/*  Solution 2   */
+
 const comp = (str1, str2) => str1.length === str2.length;
 
 
+/*  Solution 3   */
 
 function comp(str1, str2) {
 	var s1 = str1.length;

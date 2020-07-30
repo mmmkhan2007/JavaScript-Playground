@@ -22,6 +22,7 @@ Expect only positive whole numbers.
 */
 
 
+/*  Solution 1   */
 function howManyStickers(n) {
 	return n * n * 6;
 }
@@ -29,6 +30,7 @@ function howManyStickers(n) {
 
 
 
+/*  Solution 2   */
 function howManyStickers(n) {
 	return n *n * 6;
 }
@@ -37,12 +39,14 @@ howManyStickers(2)
 
 
 
+/*  Solution 3   */
 
 const howManyStickers = n => 6*n*n
 
 
 
 
+/*  Solution 4   */
 
 const howManyStickers = n => (n * n) * 6;
 

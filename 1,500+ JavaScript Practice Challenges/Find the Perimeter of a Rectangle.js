@@ -22,12 +22,15 @@ If you're really stuck, find solutions in the Solutions tab.
 
 */
 
+
+/*  Solution 1   */
 function findPerimeter(length,width){
 	return (length + width) * 2;
 }
 
 
 
+/*  Solution 2   */
 const findPerimeter = (h, w) => (w+h)*2
 
 

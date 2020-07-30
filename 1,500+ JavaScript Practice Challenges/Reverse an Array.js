@@ -23,6 +23,8 @@ If you're really stuck, unlock solutions in the Solutions tab.
 */
 
 
+/*  Solution 1   */
+
 function reverse(arr) {
 	return arr.reverse();
 }
@@ -30,6 +32,8 @@ function reverse(arr) {
 
 
 
+
+/*  Solution 2   */
 
 function reverse(arr) {
 	let result = [];
@@ -45,6 +49,7 @@ function reverse(arr) {
 
 
 
+/*  Solution 3   */
 
 
 const reverse = arr => arr.reverse();

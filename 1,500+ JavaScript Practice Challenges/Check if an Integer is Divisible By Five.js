@@ -22,12 +22,15 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 */
 
-
+/*  Solution 1   */
 
 function divisibleByFive(n) {
     return n%5===0;
     }
 
+
+
+/*  Solution 2   */
 
     function divisibleByFive(n) {
         if(n%5==0){
@@ -38,5 +41,7 @@ function divisibleByFive(n) {
         }
     };
 
+
+    /*  Solution 3   */
 
     const divisibleByFive = (n) => !(n%5)

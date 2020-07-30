@@ -24,6 +24,8 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 
 
+/*  Solution 1   */
+
 function concatName(firstName, lastName) {
 	var a = lastName.concat(', ',firstName)
 	return a ;
@@ -31,11 +33,14 @@ function concatName(firstName, lastName) {
 
 
 
+/*  Solution 2   */
+
 
 const concatName = (first, last) => `${last}, ${first}`;
 
 
 
+/*  Solution 3   */
 
 function concatName(firstName, lastName) {
 	str1 = lastName;

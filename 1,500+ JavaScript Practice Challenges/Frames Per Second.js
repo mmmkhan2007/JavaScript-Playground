@@ -23,9 +23,11 @@ Assume the screen produces 60 frames every second.
 
 
 
+/*  Solution 1   */
 const frames = (m, fps) => m * (fps * 60);
 
 
+/*  Solution 2   */
 
 function frames(minutes, fps) {
 	return minutes * fps * 60

@@ -21,14 +21,17 @@ a will always be greater than or equal to b.
 */
 
 
+/*  Solution 1   */
 function dividesEvenly(a, b) {
 	return a % b == 0
 }
 
 
+/*  Solution 2   */
 const dividesEvenly = (a, b) => !(a % b);
 
 
+/*  Solution 3   */
 function dividesEvenly(a, b) {
 	return a % b === 0 ? true : false
 }

@@ -24,18 +24,21 @@ If you're really stuck, unlock solutions in the Solutions tab.
 */
 
 
+/*  Solution 1   */
 function isEmpty(s) {
 	return !s
 }
 
 
 
+/*  Solution 2   */
 
 function isEmpty(s) {
 	return s.length === 0
 }
 
 
+/*  Solution 3   */
 const isEmpty = s => s==""?true:false;
 
 

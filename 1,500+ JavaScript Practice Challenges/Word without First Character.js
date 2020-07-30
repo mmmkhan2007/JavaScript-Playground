@@ -19,6 +19,7 @@ newWord("plum") ➞ "lum"
 */
 
 
+/*  Solution 1   */
 
 function newWord(txt){
 	return txt.slice(1)
@@ -26,6 +27,8 @@ function newWord(txt){
 
 
 
+
+/*  Solution 2   */
 
 function newWord(txt){
 	let str = txt.substring(1);
@@ -36,6 +39,7 @@ function newWord(txt){
 
 
 
+/*  Solution 3   */
 
 function newWord(txt){
 	let res ="not text"
@@ -48,6 +52,7 @@ function newWord(txt){
 
 
 
+/*  Solution 4   */
 
 const newWord = txt => {
 	return txt.slice(1)

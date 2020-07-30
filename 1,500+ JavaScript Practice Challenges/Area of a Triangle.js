@@ -24,9 +24,12 @@ If you're really stuck, unlock solutions in the Solutions tab.
 */
 
 
+
+/*  Solution 1   */
+
 const triArea = (base, height) => (base * height) / 2;
 
-
+/*  Solution 2   */
 
 function triArea(base, height) {
 	var a = base * height ;

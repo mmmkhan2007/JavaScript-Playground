@@ -22,17 +22,20 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 */
 
+/*  Solution 1   */
 
 function divisible(num) {
 	return !(num % 100)
 }
 
 
+/*  Solution 2   */
 
 const divisible = num => num % 100 === 0;
 
 
 
+/*  Solution 3   */
 function divisible(num) {
 	return num % 100 === 0;
 }

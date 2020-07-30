@@ -24,11 +24,14 @@ If you're really stuck, unlock solutions in the Solutions tab.
 
 
 
+/*  Solution 1   */
 function lessThanOrEqualToZero(num) {
 	return num <= 0;
 }
 
 
+
+/*  Solution 2   */
 function lessThanOrEqualToZero(num) {
 	if(num <= 0)
 		return true;
@@ -36,6 +39,10 @@ function lessThanOrEqualToZero(num) {
 		return false;
 }
 
+
+
+
+/*  Solution 3   */
 
 function lessThanOrEqualToZero(num) {
     return num <= 0;

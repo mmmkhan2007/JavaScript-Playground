@@ -24,16 +24,20 @@ Some countries have a slightly higher drinking age, but for the purposes of this
 */
 
 
+/*  Solution 1   */
 
 const shouldServeDrinks = (age, onBreak) => age >= 18 && !onBreak;
 
 
 
+/*  Solution 2   */
 
 function shouldServeDrinks(age, onBreak){
 	return age >= 18 && !onBreak
 }
 
+
+/*  Solution 3   */
 
 function shouldServeDrinks(age, onBreak){
 	if (age>=18 && !onBreak)return true

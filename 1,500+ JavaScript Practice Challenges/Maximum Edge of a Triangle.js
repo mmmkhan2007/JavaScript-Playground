@@ -23,6 +23,7 @@ Don't forget to return the result.
 */
 
 
+/*  Solution 1   */
 function nextEdge(side1, side2) {
 	if(side1 > 0 && side2 > 0) {
 		return (side1 + side2) - 1;
@@ -33,9 +34,11 @@ function nextEdge(side1, side2) {
 
 
 
+/*  Solution 2   */
 function nextEdge(side1, side2) {
 	return side1 + side2 - 1;
 }
 
 
+/*  Solution 3   */
 const nextEdge = (side1, side2) => side1 + side2 - 1;
