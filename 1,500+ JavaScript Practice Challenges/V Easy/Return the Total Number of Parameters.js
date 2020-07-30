@@ -37,7 +37,7 @@ function numberArgs() {
 
 /*  Solution 2   */
 
-onst numberArgs = (...args) => args.length;
+const numberArgs = (...args) => args.length;
 
 
 
