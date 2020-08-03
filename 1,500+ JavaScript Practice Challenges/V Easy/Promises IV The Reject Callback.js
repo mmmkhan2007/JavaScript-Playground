@@ -35,7 +35,17 @@ Check the Resources tab for more info on promises.
 /*  Solution 1   */
 
 
-
+let promise = new Promise( (resolve) => {
+	let animal = "cat"
+  setTimeout(() => {
+		if(animal === "dog") {
+			resolve("It's a dog!")
+		} 
+	  if(animal !== "dog") {
+			reject("It's not a dog!")
+		}
+  }, 1000)
+})
 
 
 /*  Solution 2   */
@@ -45,3 +55,18 @@ Check the Resources tab for more info on promises.
 
 
 /*  Solution 3   */
+
+
+let promise = new Promise( (resolve) => {
+	let animal = "cat"
+  setTimeout(() => {
+		if(animal === "dog") {
+			resolve("It's a dog!")
+		} 
+	  if(animal !== "dog") {
+			/* need something here, you might also need to pass
+			something else besides the resolve callback */
+			error("It's not a dog!")
+		}
+  }, 1000)
+})
