@@ -26,14 +26,17 @@ If you know how to use object destructuring, go ahead and complete this challeng
 
 /*  Solution 1   */
 
-
+const str = `({ one = 1, two } = { two : 2}).toString()`
 
 
 
 /*  Solution 2   */
 
-
+const str = `({ one, two } = { two : 2, one: 1 }).toString()`
+return str ? "valid" : "not valid"
 
 
 
 /*  Solution 3   */
+
+const str = `({ one: one = 1, two } = { two : 2 }).toString()`
