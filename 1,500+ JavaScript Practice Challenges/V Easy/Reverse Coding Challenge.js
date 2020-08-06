@@ -32,13 +32,88 @@ If you get stuck, see Comments for a hint.
 /*  Solution 1   */
 
 
+function mysteryFunc(arr, num) {
+    arr.forEach((x, i) => { arr[i] = x % num });
+    return arr;
+}
 
 
+
+function mysteryFunc(arr, num) {
+    return arr.map(n => n % num)
+}
+
+
+
+function mysteryFunc(arr, num) {
+    return arr.map(v => v % num)
+}
+
+
+
+
+function mysteryFunc(arr, num) {
+    let newArr = arr.map(x => { return x % num; });
+    return newArr;
+}
+
+
+
+
+
+function mysteryFunc(arr, num) {
+    let arr1 = arr.map(x => x % num)
+    return arr1
+}
+
+
+
+
+
+function mysteryFunc(arr, num) {
+    return arr.map(el => el % num)
+
+
+}
 
 /*  Solution 2   */
+
+const mysteryFunc = (arr, divisor) => arr.map(num => num % divisor);
+
+const mysteryFunc = (arr, num) => arr.map(x => x % num);
+
+const mysteryFunc = (arr, num) => arr.map(x => x % num);
+
+const mysteryFunc = (a, n) => a.map(x => x % n)
 
 
 
 
 
 /*  Solution 3   */
+
+
+function mysteryFunc(arr, num) {
+    return arr.map(x => x % num)
+}
+
+
+
+
+function mysteryFunc(arr, num) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        newArr.push(arr[i] % num);
+    }
+    return newArr;
+}
+
+
+
+function mysteryFunc(arr, num) {
+    return arr.map(value => value % num);
+}
+
+
+
+v
