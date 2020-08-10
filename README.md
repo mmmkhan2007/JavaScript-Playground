@@ -9,8 +9,9 @@
 7. Codewars
 8. LeetCode
 9. SPOJ
-10. Codesignal 
+10. CodeSignal 
 11. edabit
+12. CodeFights
 
 
 
