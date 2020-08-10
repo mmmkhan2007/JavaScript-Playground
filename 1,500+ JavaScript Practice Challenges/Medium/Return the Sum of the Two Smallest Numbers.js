@@ -29,20 +29,60 @@ Floats and empty arrays will not be used in any of the test cases.
 /*  Solution 1   */
 
 
+function sumTwoSmallestNums(arr) {
+    arr = arr.sort((a, b) => a - b).filter(x => x > 0);
+    return arr[0] + arr[1];
 
+}
 
 
 /*  Solution 2   */
 
 
-
+function sumTwoSmallestNums(arr) {
+    return arr.filter(a => a > 0).sort((a, b) => a > b).slice(0, 2).reduce((a, b) => a + b);
+}
 
 
 /*  Solution 3   */
 
 
 
-
+function sumTwoSmallestNums(arr) {
+    return arr.filter((item) => item >= 0)
+        .sort((a, b) => a - b)
+        .slice(0, 2)
+        .reduce((acc, item) => acc + item);
+}
 
 
 /*  Solution 4   */
+
+function sumTwoSmallestNums(arr) {
+    var lowest = arr.filter((arr) => arr > 0).sort((a, b) => a - b).slice(0, 2)
+    return lowest[0] + lowest[1]
+}
+
+
+
+function sumTwoSmallestNums(arr) {
+    var arr = arr.filter(x => x >= 0).sort((a, b) => a - b);
+    return arr[0] + arr[1];
+}
+
+
+
+function sumTwoSmallestNums(arr) {
+    return arr.filter(num => num >= 0)
+        .sort((a, b) => a > b ? 1 : (a < b ? -1 : 0))
+        .slice(0, 2)
+        .reduce((sum, num) => sum + num, 0);
+}
+
+
+
+function sumTwoSmallestNums(arr) {
+    let newarr = arr.sort((a, b) => a > b);
+    let user = newarr.filter(element => element > 0)
+    return user[0] + user[1];
+}
