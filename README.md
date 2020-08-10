@@ -1,6 +1,5 @@
 # Learning.JS
 
-
 1. TopCoder
 2. Coderbyte
 3. Project Euler
@@ -10,11 +9,8 @@
 7. Codewars
 8. LeetCode
 9. SPOJ
+10. Codesignal 
 
-
-Coderbyte – Beginner to Intermediate
-HackerRank – Beginner to Intermediate
-Codesignal – Intermediate to Advanced
 
 
 
