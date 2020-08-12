@@ -26,17 +26,41 @@ Check the Resources for info on triangular number sequence.
 
 /*  Solution 1   */
 
+const triangle = n => n * (n + 1) / 2;
 
+const triangle = num => (num <= 1 ? 1 : triangle(num - 1) + num);
+
+const triangle = n => (n * (n + 1)) / 2;
+
+const triangle = n => n < 2 ? 1 : n + triangle(n - 1);
+
+const triangle = n => n * (n + 1) / 2;
 
 
 
 /*  Solution 2   */
 
 
-
+function triangle(n) {
+    var count = 0;
+    for (var num = 0; num <= n; num++) {
+        count = count + num;
+    }
+    return count
+}
 
 
 /*  Solution 3   */
+
+function triangle(n) {
+    var a = 1;
+    var num = 1;
+    while (a != n) {
+        a++;
+        num = num + a;
+    }
+    return num;
+}
 
 
 
@@ -44,3 +68,12 @@ Check the Resources for info on triangular number sequence.
 
 
 /*  Solution 4   */
+
+
+function triangle(n) {
+    let result = 1;
+    for (let i = 1; i < n; i++) {
+        result += (i + 1);
+    }
+    return result
+}
