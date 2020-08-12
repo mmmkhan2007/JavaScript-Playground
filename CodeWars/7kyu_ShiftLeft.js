@@ -12,3 +12,15 @@
 
 // Note
 // Both strings consist only of lowercase Latin letters.
+
+
+
+
+function shiftLeft(s, t) {
+    let getIdx = function(a, b) {
+        for (let i = 0; i <= a.length; i++)
+            if (b.endsWith(a.substring(i, a.length)))
+                return i;
+    }
+    return getIdx(s, t) + getIdx(t, s);
+}

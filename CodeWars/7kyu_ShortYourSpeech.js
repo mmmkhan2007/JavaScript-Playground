@@ -17,3 +17,7 @@
 // shortenSpeech( "Hey fellow warriors !" ) => returns "Hey fell. warr. !"
 
 // shortenSpeech( "This is a test") => returns "This is a test"
+
+
+
+let shortenSpeech = str => str.replace(/\b(\S{3,}?)[aeiou]\S*/g, '$1.');
