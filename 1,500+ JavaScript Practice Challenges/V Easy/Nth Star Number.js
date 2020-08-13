@@ -26,3 +26,21 @@ See Resources for more information.
 Solutions
 
 */
+
+
+
+function starNumber(n) {
+    return 6 * n * (n - 1) + 1
+}
+
+
+
+function starNumber(n) {
+    var res;
+    res = 6 * n * (n - 1) + 1;
+    return res;
+}
+
+
+
+const starNumber = n => 6 * n * (n - 1) + 1;
