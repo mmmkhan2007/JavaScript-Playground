@@ -25,3 +25,21 @@ You'll only be given integers as test input.
 Solutions
 
 */
+
+
+
+const howManyTimes = num => `Ed${'a'.repeat(num)}bit`;
+
+
+
+function howManyTimes(num) {
+    return 'Ed' + 'a'.repeat(num) + 'bit'
+}
+
+
+
+
+function howManyTimes(num) {
+    let str = "a";
+    return `Ed${str.repeat(num)}bit`;
+}
