@@ -44,3 +44,14 @@ function starNumber(n) {
 
 
 const starNumber = n => 6 * n * (n - 1) + 1;
+
+
+
+const starNumber = n => {
+    let num = +n
+    return 6 * num * (num - 1) + 1
+}
+
+
+
+const starNumber = n => 6 * n * (n - 1) + 1
