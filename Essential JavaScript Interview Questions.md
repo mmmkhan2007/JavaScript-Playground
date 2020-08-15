@@ -1,12 +1,9 @@
+# Essential JavaScript Interview Questions
 
 
+## 1.)   What is a potential pitfall with using typeof bar === "object" to determine if bar is an object? How can this pitfall be avoided?
 
-
-
-
-1.)   What is a potential pitfall with using typeof bar === "object" to determine if bar is an object? How can this pitfall be avoided?
-
-
+```
 Although typeof bar === "object" is a reliable way of checking if bar is an object, the surprising gotcha in JavaScript is that null is also considered an object!
 
 Therefore, the following code will, to the surprise of most developers, log true (not false) to the console:
@@ -34,13 +31,13 @@ ES5 makes the array case quite simple, including its own null check:
 
 console.log(Array.isArray(bar));
 
+```
 
 
 
 
 
-
-2.)  What will the code below output to the console and why?
+## 2.)  What will the code below output to the console and why?
 
 (function(){
   var a = b = 3;
@@ -49,7 +46,7 @@ console.log(Array.isArray(bar));
 console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
 
-
+```
 
 Since both a and b are defined within the enclosing scope of the function, and since the line they are on begins with the var keyword, most JavaScript developers would expect typeof a and typeof b to both be undefined in the above example.
 
@@ -69,11 +66,11 @@ But how can b be defined outside of the scope of the enclosing function? Well, s
 
 Note that, in strict mode (i.e., with use strict), the statement var a = b = 3; will generate a runtime error of ReferenceError: b is not defined, thereby avoiding any headfakes/bugs that might othewise result. (Yet another prime example of why you should use use strict as a matter of course in your code!)
 
+```
 
 
 
-
-What will the code below output to the console and why?
+## 3.) What will the code below output to the console and why?
 
 
 var myObject = {
@@ -92,7 +89,7 @@ myObject.func();
 
 
 
-
+```
 The above code will output the following to the console:
 
 outer func:  this.foo = bar
@@ -104,32 +101,32 @@ In the outer function, both this and self refer to myObject and therefore both c
 In the inner function, though, this no longer refers to myObject. As a result, this.foo is undefined in the inner function, whereas the reference to the local variable self remains in scope and is accessible there.
 
 
+```
 
 
 
 
 
-
-What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
-
+## 4.) What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
 
 
 
+```
 This is an increasingly common practice, employed by many popular JavaScript libraries (jQuery, Node.js, etc.). This technique creates a closure around the entire contents of the file which, perhaps most importantly, creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries.
 
 Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the $ reference to the jQuery namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, as follows:
 
 (function($) { /* jQuery plugin code referencing $ */ } )(jQuery);
+```
 
 
 
 
 
-
-What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
-
+## 5.) What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
 
 
+```
 The short and most important answer here is that use strict is a way to voluntarily enforce stricter parsing and error handling on your JavaScript code at runtime. Code errors that would otherwise have been ignored or would have failed silently will now generate errors or throw exceptions. In general, it is a good practice.
 
 Some of the key benefits of strict mode include:
@@ -141,11 +138,11 @@ Disallows duplicate parameter values. Strict mode throws an error when it detect
 Note: It used to be (in ECMAScript 5) that strict mode would disallow duplicate property names (e.g. var object = {foo: "bar", foo: "baz"};) but as of ECMAScript 2015 this is no longer the case.
 Makes eval() safer. There are some differences in the way eval() behaves in strict mode and in non-strict mode. Most significantly, in strict mode, variables and functions declared inside of an eval() statement are not created in the containing scope (they are created in the containing scope in non-strict mode, which can also be a common source of problems).
 Throws error on invalid usage of delete. The delete operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. Non-strict code will fail silently when an attempt is made to delete a non-configurable property, whereas strict mode will throw an error in such a case.
+```
 
 
 
-
-Consider the two functions below. Will they both return the same thing? Why or why not?
+## 6.) Consider the two functions below. Will they both return the same thing? Why or why not?
 
 
 
@@ -165,11 +162,7 @@ function foo2()
 }
 
 
-
-
-
-
-
+```
 Surprisingly, these two functions will not return the same thing. Rather:
 
 console.log("foo1 returns:");
@@ -189,7 +182,7 @@ The reason for this has to do with the fact that semicolons are technically opti
 No error is thrown since the remainder of the code is perfectly valid, even though it doesn’t ever get invoked or do anything (it is simply an unused code block that defines a property bar which is equal to the string "hello").
 
 This behavior also argues for following the convention of placing an opening curly brace at the end of a line in JavaScript, rather than on the beginning of a new line. As shown here, this becomes more than just a stylistic preference in JavaScript.
-
+```
 
 
 
