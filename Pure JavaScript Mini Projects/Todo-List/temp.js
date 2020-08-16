@@ -113,3 +113,47 @@ function showFilteredTodos(event) {
     }
 
 }
+
+
+
+// Back-end (Storage) Functions
+
+function saveTodo(todoDiv) {
+    todosArr.push(todoDiv);
+    saveAllTodosIntoLocalStorage();
+}
+
+function deleteTodo(todoDiv) {
+    const index = todosArr.indexOf(todoDiv);
+    if (index != -1) {
+        todosArr.splice(index, 1);
+        saveAllTodosIntoLocalStorage();
+    }
+}
+
+function updateTodo(todoDiv) {
+    const index = todosArr.indexOf(todoDiv);
+    todosArr[index] = todoDiv;
+    saveAllTodosIntoLocalStorage();
+}
+
+function saveAllTodosIntoLocalStorage() {
+    const savedArr = [];
+
+    for (let todoItem of todosArr) {
+        savedArr.push(todoItem.outerHTML);
+    }
+
+    window.localStorage.setItem('todos', JSON.stringify(savedArr));
+}
+
+function loadAllTodosFromLocalStorage() {
+    const loadedArr = JSON.parse(window.localStorage.getItem('todos'));
+    const parsedArr = [];
+
+    for (let todoItem of loadedArr) {
+        parsedArr.push(domParser.parseFromString(todoItem, "text/html").body.children[0]);
+    }
+
+    return parsedArr;
+}
