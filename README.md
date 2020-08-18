@@ -11,7 +11,9 @@
 
 ```
 Codewars is where developers achieve code mastery through challenge. Train on kata in the dojo and reach your highest potential.
-Challenge yourself on kata, created by the community to strengthen different skills. Solve the kata with your coding style right in the browser and use test cases (TDD) to check it as you progress. Retrain with new, creative, and optimized approaches.
+Challenge yourself on kata, created by the community to strengthen different skills. 
+Solve the kata with your coding style right in the browser and use test cases (TDD) to check it as you progress. 
+Retrain with new, creative, and optimized approaches.
 ```
 
 8. LeetCode
