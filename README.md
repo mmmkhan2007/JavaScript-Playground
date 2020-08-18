@@ -1,7 +1,7 @@
 # Learning.JS
 
-1. TopCoder
-2. Coderbyte
+###  1. TopCoder
+###  2. Coderbyte
 
 
 ### 3. Project Euler
@@ -39,8 +39,8 @@ Questions are ranked by level of difficulty: easy, medium, and hard.
 Similar websites include HackerRank, Topcoder, InterviewBit, among others.
 
 ```
-9. SPOJ
-10. CodeSignal 
+###  9. SPOJ
+###  10. CodeSignal 
 
 ### 11. edabit
 ```
@@ -49,7 +49,7 @@ Edabit is an online collection of coding challenges in 8 languages, including C+
 They provide software engineers with small challenges that help them advance their skills quickly. ... 
 Each challenge includes links to resources, solutions, and comments from other coders.
 ```
-12. CodeFights
+###  12. CodeFights
 
 
 
