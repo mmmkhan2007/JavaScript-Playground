@@ -1,6 +1,13 @@
 # Learning.JS
 
 ###  1. TopCoder
+```
+Topcoder (formerly TopCoder) is a crowdsourcing company with an open global community of designers,
+developers, data scientists, and competitive programmers. Topcoder pays community members for their work on the
+projects and sells community services to corporate, mid-size, and small-business clients.
+Topcoder also organizes the annual Topcoder Open tournament and a series of smaller regional events.
+ ```
+ 
 ###  2. Coderbyte
 
 
