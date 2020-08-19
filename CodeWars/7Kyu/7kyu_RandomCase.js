@@ -11,3 +11,8 @@
   // randomCase("Donec eleifend cursus lobortis") == "DONeC ElEifEnD CuRsuS LoBoRTIs"
   // Note: this function will work within the basic ASCII character set to make this 
   // kata easier - so no need to make the function multibyte safe.
+
+
+  function randomCase(x) {
+      return x.split("").map(a => (Math.random() > .5) ? a.toLowerCase() : a.toUpperCase()).join("");
+  }
