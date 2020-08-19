@@ -56,3 +56,21 @@
 
 // No silly test cases will be used such as: negative/0 deposit amount,
 // negative/0 target balance, astronomical input sizes.
+
+
+
+
+function calculateRetirement(deposit, targetBalance) {
+    let obj = {};
+    for (let i = 1; i <= 6; i++) {
+        let d = 0;
+        for (let j = 1;; j++) {
+            d = (d + deposit) * (1 + i / 100);
+            if (d >= targetBalance) {
+                obj[i] = j;
+                break;
+            }
+        }
+    }
+    return obj;
+}
