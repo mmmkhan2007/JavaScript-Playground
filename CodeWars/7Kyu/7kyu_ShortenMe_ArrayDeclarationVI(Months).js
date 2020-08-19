@@ -9,3 +9,7 @@
 //   'July', 'August', 'September', 'October', 'November', 'December' ]
 // Coding Limitation:
 // Less than 120 characters
+
+
+
+s = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember', array = _ => (s + s).match(/[A-Z][a-z]+/g);
