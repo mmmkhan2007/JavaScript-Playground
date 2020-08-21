@@ -1,4 +1,6 @@
-// Create a function with two arguments that will return an array of the first (n) multiples of (x).
+// 8kyu - Count by X
+
+// Create a function with two arguments that will return a list of length (n) with multiples of (x).
 
 // Assume both the given number and the number of times to count will be positive numbers greater than 0.
 
@@ -11,19 +13,14 @@
 
 
 
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
 
-
-
 function countBy(x, n) {
-    var resulte = []
-    var count = x;
-    for (var i = 0; i < n; i++) {
-        resulte.push(count)
-        count += x
-    };
-
-    return resulte;
+    let arr = [];
+    for (i = 1; i <= n; i++)
+        arr.push(x * i);
+    return arr;
 }
