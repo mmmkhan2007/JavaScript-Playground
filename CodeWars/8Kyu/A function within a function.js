@@ -4,6 +4,12 @@ Given an input n, write a function always that returns a function which returns 
 var three = always(3);
 three(); // returns 3
 */
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 function always(n) {
 
     return function() { return n };
