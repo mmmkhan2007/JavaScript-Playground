@@ -1,15 +1,20 @@
-// Language: Javascript
-// Level: 7kyu
-// Name of Problem: Remove anchor from URL
+/*  
 
-// Instructions: Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+Language: Javascript
+Level: 7kyu
+Name of Problem: Remove anchor from URL
 
-// Examples:
-// removeUrlAnchor('www.codewars.com#about')
-// returns 'www.codewars.com'
+Instructions: Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 
-// removeUrlAnchor('www.codewars.com?page=1') 
-// returns 'www.codewars.com?page=1' 
+Examples:
+removeUrlAnchor('www.codewars.com#about')
+returns 'www.codewars.com'
+
+removeUrlAnchor('www.codewars.com?page=1') 
+returns 'www.codewars.com?page=1' 
+
+ */
+
 
 // Solution 1:
 function removeUrlAnchor(url) {
@@ -21,6 +26,10 @@ function removeUrlAnchor(url) {
 function removeUrlAnchor(url) {
     return url.split("#")[0]
 }
+
+
+
+
 
 // Sample Tests Passed:
 // Test.assertEquals(removeUrlAnchor('www.codewars.com#about'), 'www.codewars.com');

@@ -17,6 +17,14 @@ Both strings consist only of lowercase Latin letters.
 
 */
 
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 function shiftLeft(s, t) {
     let getIdx = function(a, b) {
         for (let i = 0; i <= a.length; i++)

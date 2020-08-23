@@ -25,6 +25,9 @@ Cant find entry for Banana
 Good luck and happy coding!
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var Dictionary =
 /*#__PURE__*/
 function () {

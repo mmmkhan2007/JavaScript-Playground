@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 Language: Javascript
@@ -17,14 +19,9 @@ Examples:
 e.g. If 4 is given: 1 + 3 + 6 + 10 = 20.
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
 
 /* 
 
@@ -35,21 +32,16 @@ step3: find sum of series
 resource: https://www.geeksforgeeks.org/sum-series-1-3-6-10-triangular-numbers/
 
  */
-
-
 function sumTriangularNumbers(n) {
-    let sum = 0
-    for (let i = 1; i <= n; i++) {
-        sum += i * (i + 1) / 2
-    }
-    return sum;
-}
+  var sum = 0;
 
+  for (var i = 1; i <= n; i++) {
+    sum += i * (i + 1) / 2;
+  }
 
-
-// Solution 2:
+  return sum;
+} // Solution 2:
 // todo: write this solution more efficiently here
-
 // Sample Tests Passed:
 // Test.assertEquals(sumTriangularNumbers(6), 56);
 // Test.assertEquals(sumTriangularNumbers(34), 7140);

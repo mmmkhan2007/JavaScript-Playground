@@ -33,6 +33,14 @@ alphabetWar("wwwwwwz");  //=> Left side wins!
 
 
 
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
+
 function alphabetWar(fight) {
     let res = [...fight].reduce((a, b) => a + "sbpw".indexOf(b) - "zdqm".indexOf(b), 0);
     return (res === 0) ? "Let's fight again!" : `${res < 0 ? "Right" : "Left"} side wins!`

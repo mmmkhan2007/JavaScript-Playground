@@ -40,6 +40,9 @@ alphabetWar("zzzzs");    //=> Right side wins!
 alphabetWar("wwwwwwz");  //=> Left side wins!
 
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function alphabetWar(fight) {
   var res = _toConsumableArray(fight).reduce(function (a, b) {
     return a + "sbpw".indexOf(b) - "zdqm".indexOf(b);

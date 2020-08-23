@@ -15,6 +15,9 @@ Edge cases: An array of length 0 or 1 should not be considered a Madhav array
 as there is nothing to compare.
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function isMadhavArray(arr) {
   var s = 1,
       l = 2,

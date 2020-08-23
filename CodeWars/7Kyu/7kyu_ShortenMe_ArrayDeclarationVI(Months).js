@@ -14,4 +14,14 @@ Less than 120 characters
 
   */
 
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 s = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember', array = _ => (s + s).match(/[A-Z][a-z]+/g);

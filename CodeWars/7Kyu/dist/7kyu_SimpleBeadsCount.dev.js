@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 7kyu - Simple beads count
@@ -12,6 +14,6 @@ Javascript countRedBeads(n)) so that it returns the number of red beads.
 If there are less than 2 blue beads return 0.
 
  */
-
-
-let countRedBeads = n => n < 2 ? 0 : 2 * n - 2;
+var countRedBeads = function countRedBeads(n) {
+  return n < 2 ? 0 : 2 * n - 2;
+};

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Simple Elevator
@@ -35,11 +37,9 @@ instead of a string.
 
 
  */
-
-function goto(level, button) {
-    const buttons = ['0', '1', '2', '3'],
-        levels = [0, 1, 2, 3];
-    if (levels.includes(level) && buttons.includes(button))
-        return button - level;
-    return 0;
+function _goto(level, button) {
+  var buttons = ['0', '1', '2', '3'],
+      levels = [0, 1, 2, 3];
+  if (levels.includes(level) && buttons.includes(button)) return button - level;
+  return 0;
 }

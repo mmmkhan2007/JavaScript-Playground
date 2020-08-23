@@ -25,6 +25,9 @@ mid-point. Using the existing coordinates and the mid-point, return the complete
 shape as a two-dimensional array.
 
   */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var symmetricShape = function symmetricShape(shape, _ref) {
   var _ref2 = _slicedToArray(_ref, 2),
       x0 = _ref2[0],

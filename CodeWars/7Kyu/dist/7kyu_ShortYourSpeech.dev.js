@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Shorten your speech
@@ -16,6 +18,6 @@ shortenSpeech( "Hey fellow warriors !" ) => returns "Hey fell. warr. !"
 shortenSpeech( "This is a test") => returns "This is a test"
 
  */
-
-
-let shortenSpeech = str => str.replace(/\b(\S{3,}?)[aeiou]\S*/g, '$1.');
+var shortenSpeech = function shortenSpeech(str) {
+  return str.replace(/\b(\S{3,}?)[aeiou]\S*/g, '$1.');
+};

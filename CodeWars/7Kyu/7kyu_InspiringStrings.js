@@ -14,6 +14,15 @@ Example:
 
 */
 
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 function longestWord(stringOfWords) {
     stringOfWords = stringOfWords.split(" ");
     let temp = "";

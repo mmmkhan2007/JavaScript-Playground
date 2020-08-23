@@ -15,6 +15,9 @@ Coding Limitation:
 Less than 120 characters
 
   */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 s = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember', array = function array(_) {
   return (s + s).match(/[A-Z][a-z]+/g);
 };

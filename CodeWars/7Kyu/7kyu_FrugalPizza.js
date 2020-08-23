@@ -23,6 +23,11 @@ If you are given too few arguments, or if they aren't numbers, then return 0.
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 function pizzaPrice(diameter, price) {
     return (!diameter || !price || typeof diameter !== "number" || typeof price !== "number") ? 0 : Math.round(price / (Math.pow(diameter / 2, 2) * Math.PI) * 100) / 100

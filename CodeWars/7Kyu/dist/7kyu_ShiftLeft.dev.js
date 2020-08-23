@@ -18,6 +18,9 @@ Note
 Both strings consist only of lowercase Latin letters.
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function shiftLeft(s, t) {
   var getIdx = function getIdx(a, b) {
     for (var i = 0; i <= a.length; i++) {

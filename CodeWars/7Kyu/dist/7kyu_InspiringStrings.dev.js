@@ -15,6 +15,9 @@ Example:
 'red blue gold' //returns gold
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function longestWord(stringOfWords) {
   stringOfWords = stringOfWords.split(" ");
   var temp = "";

@@ -22,6 +22,9 @@ scrollingText("codewars") should return
 Good luck!
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function scrollingText(text) {
   var arr = [];
   text = text.toUpperCase();

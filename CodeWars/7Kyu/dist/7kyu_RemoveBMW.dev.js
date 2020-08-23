@@ -20,6 +20,9 @@ type was sent as a parameter the function must throw an error
 (IllegalArgumentException in Groovy): "This program only works for text."
 
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function removeBMW(str) {
   if (typeof str !== "string") {
     throw new Error("This program only works for text.");

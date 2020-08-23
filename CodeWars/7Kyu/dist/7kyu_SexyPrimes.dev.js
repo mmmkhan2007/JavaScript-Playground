@@ -28,7 +28,10 @@ function sexy_prime(x, y){
   return Math.abs(x-y) === 6 && isPrime(x) && isPrime(y);
 }
 
-  */
+*/
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function isPrime(n) {
   for (var i = 2, s = Math.sqrt(n); i <= s; i++) {
     if (n % i === 0) return false;

@@ -61,6 +61,9 @@ Enjoy!
 
 
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var haikuWizard = function (arr) {
   var words = [["like", "a", "tweet", "what", "for", "world", "whale", "one", "last", "sun"], ["ocean", "beauty", "tweet", "monster", "yellow", "return", "despair", "flower", "return", "contrast"], ["romantic", "curious", "banana", "jealousy", "tactlessly", "remorseful", "follower", "elephant", "however", "instagram"], ["salmonella", "consequently", "irregular", "intelligence", "vegetable", "ordinary", "alternative", "watermelon", "controversial", "marijuana"], ["lackadaisical", "serendipity", "colonoscopy", "dramatically", "parsimonius", "imagination", "electricity", "diabolical", "deforestation", "abomination"], ["extraterrestrial", "onomatopoeia", "responsibility", "revolutionary", "generalisation", "enthusiastically", "biodiversity", "veterinarian", "characteristically", "indefatigable"], ["oversimplification", "individuality", "decriminalisation", "compartmentalisation", "anaesthesiologist", "industrialisation", "buckminsterfullerene", "irresponsibility", "autobiographical", "utilitarianism"]];
   return function (arr) {
