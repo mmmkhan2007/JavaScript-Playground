@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Half Life
@@ -21,7 +23,6 @@ halfLife(8,4,2) => 2
 halfLife(12,3,2) => 1
 
  */
-
 function halfLife(quantityInitial, quantityRemaining, time) {
-    return time / Math.log2(quantityInitial / quantityRemaining)
+  return time / Math.log2(quantityInitial / quantityRemaining);
 }

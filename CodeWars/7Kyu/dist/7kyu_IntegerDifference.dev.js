@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Integer Difference 
@@ -13,12 +15,14 @@ For example:
 
 
  */
+var intDiff = function intDiff(arr, n) {
+  var count = 0;
 
+  for (var i = 1; i < arr.length; i++) {
+    for (var j = 0; j < i; j++) {
+      if (Math.abs(arr[i] - arr[j]) === n) count++;
+    }
+  }
 
-const intDiff = (arr, n) => {
-    let count = 0;
-    for (let i = 1; i < arr.length; i++)
-        for (let j = 0; j < i; j++)
-            if (Math.abs(arr[i] - arr[j]) === n) count++;
-    return count;
-}
+  return count;
+};

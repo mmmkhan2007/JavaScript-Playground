@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Madhav Array
@@ -13,19 +15,21 @@ Edge cases: An array of length 0 or 1 should not be considered a Madhav array
 as there is nothing to compare.
 
 */
-
-
-
 function isMadhavArray(arr) {
-    let s = 1,
-        l = 2,
-        bool = arr.length > 2;
-    while (s < arr.length && bool) {
-        let val = 0;
-        for (let i = 0; i < l; i++)
-            val += arr[s + i];
-        bool = (val === arr[0]);
-        s += l++;
+  var s = 1,
+      l = 2,
+      bool = arr.length > 2;
+
+  while (s < arr.length && bool) {
+    var val = 0;
+
+    for (var i = 0; i < l; i++) {
+      val += arr[s + i];
     }
-    return bool;
+
+    bool = val === arr[0];
+    s += l++;
+  }
+
+  return bool;
 }

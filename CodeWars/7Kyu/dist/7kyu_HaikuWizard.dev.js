@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 7kyu - Haiku Wizard
@@ -59,29 +61,18 @@ Enjoy!
 
 
  */
+var haikuWizard = function (arr) {
+  var words = [["like", "a", "tweet", "what", "for", "world", "whale", "one", "last", "sun"], ["ocean", "beauty", "tweet", "monster", "yellow", "return", "despair", "flower", "return", "contrast"], ["romantic", "curious", "banana", "jealousy", "tactlessly", "remorseful", "follower", "elephant", "however", "instagram"], ["salmonella", "consequently", "irregular", "intelligence", "vegetable", "ordinary", "alternative", "watermelon", "controversial", "marijuana"], ["lackadaisical", "serendipity", "colonoscopy", "dramatically", "parsimonius", "imagination", "electricity", "diabolical", "deforestation", "abomination"], ["extraterrestrial", "onomatopoeia", "responsibility", "revolutionary", "generalisation", "enthusiastically", "biodiversity", "veterinarian", "characteristically", "indefatigable"], ["oversimplification", "individuality", "decriminalisation", "compartmentalisation", "anaesthesiologist", "industrialisation", "buckminsterfullerene", "irresponsibility", "autobiographical", "utilitarianism"]];
+  return function (arr) {
+    var temp = [];
 
-
-
-
-let haikuWizard = (function(arr) {
-    var words = [
-        ["like", "a", "tweet", "what", "for", "world", "whale", "one", "last", "sun"],
-        ["ocean", "beauty", "tweet", "monster", "yellow", "return", "despair", "flower", "return", "contrast"],
-        ["romantic", "curious", "banana", "jealousy", "tactlessly", "remorseful", "follower", "elephant", "however", "instagram"],
-        ["salmonella", "consequently", "irregular", "intelligence", "vegetable", "ordinary", "alternative", "watermelon", "controversial", "marijuana"],
-        ["lackadaisical", "serendipity", "colonoscopy", "dramatically", "parsimonius", "imagination", "electricity", "diabolical", "deforestation", "abomination"],
-        ["extraterrestrial", "onomatopoeia", "responsibility", "revolutionary", "generalisation", "enthusiastically", "biodiversity", "veterinarian", "characteristically", "indefatigable"],
-        ["oversimplification", "individuality", "decriminalisation", "compartmentalisation", "anaesthesiologist", "industrialisation", "buckminsterfullerene", "irresponsibility", "autobiographical", "utilitarianism"]
-    ]
-
-    return function(arr) {
-        let temp = [];
-        for (let i = 0; i < arr.length; i++) {
-            temp.push(arr[i].map(a => {
-                let idx = a.toString().split("")
-                return words[+idx[0] - 1][+idx[1]]
-            }).join(" "))
-        }
-        return temp.join("\n");
+    for (var i = 0; i < arr.length; i++) {
+      temp.push(arr[i].map(function (a) {
+        var idx = a.toString().split("");
+        return words[+idx[0] - 1][+idx[1]];
+      }).join(" "));
     }
-})();
+
+    return temp.join("\n");
+  };
+}();

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Password Maker
@@ -14,7 +16,8 @@ Examples:
 "Keep Calm and Carry On"            --> "KCaC0"
 
  */
-
-
-
-let makePassword = p => p.replace(/i/ig, '1').replace(/o/ig, '0').replace(/s/ig, '5').split(' ').map(x => x[0]).join('');
+var makePassword = function makePassword(p) {
+  return p.replace(/i/ig, '1').replace(/o/ig, '0').replace(/s/ig, '5').split(' ').map(function (x) {
+    return x[0];
+  }).join('');
+};

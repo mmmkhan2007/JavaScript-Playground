@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 7kyu - Remove BMW
@@ -18,12 +20,10 @@ type was sent as a parameter the function must throw an error
 (IllegalArgumentException in Groovy): "This program only works for text."
 
  */
-
-
-
-
-
 function removeBMW(str) {
-    if (typeof str !== "string") { throw new Error("This program only works for text.") }
-    return str.replace(/[bmw]/gi, "");
+  if (typeof str !== "string") {
+    throw new Error("This program only works for text.");
+  }
+
+  return str.replace(/[bmw]/gi, "");
 }

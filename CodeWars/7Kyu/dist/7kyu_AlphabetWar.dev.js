@@ -1,3 +1,13 @@
+"use strict";
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 /* 
 
 7kyu - Alphabet War
@@ -30,10 +40,10 @@ alphabetWar("zzzzs");    //=> Right side wins!
 alphabetWar("wwwwwwz");  //=> Left side wins!
 
  */
-
-
-
 function alphabetWar(fight) {
-    let res = [...fight].reduce((a, b) => a + "sbpw".indexOf(b) - "zdqm".indexOf(b), 0);
-    return (res === 0) ? "Let's fight again!" : `${res < 0 ? "Right" : "Left"} side wins!`
+  var res = _toConsumableArray(fight).reduce(function (a, b) {
+    return a + "sbpw".indexOf(b) - "zdqm".indexOf(b);
+  }, 0);
+
+  return res === 0 ? "Let's fight again!" : "".concat(res < 0 ? "Right" : "Left", " side wins!");
 }

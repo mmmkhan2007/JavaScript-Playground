@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Scrolling Text
@@ -20,11 +22,13 @@ scrollingText("codewars") should return
 Good luck!
 
 */
-
 function scrollingText(text) {
-    let arr = [];
-    text = text.toUpperCase();
-    for (var i = 0; i < text.length; i++)
-        arr.push((text.slice(i) + text.slice(0, i)))
-    return arr;
+  var arr = [];
+  text = text.toUpperCase();
+
+  for (var i = 0; i < text.length; i++) {
+    arr.push(text.slice(i) + text.slice(0, i));
+  }
+
+  return arr;
 }

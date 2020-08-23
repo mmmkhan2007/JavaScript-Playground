@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Inspiring Strings
@@ -13,14 +15,15 @@ Example:
 'red blue gold' //returns gold
 
 */
-
 function longestWord(stringOfWords) {
-    stringOfWords = stringOfWords.split(" ");
-    let temp = "";
-    for (let i = 0; i < stringOfWords.length; i++) {
-        if (stringOfWords[i].length >= temp.length) {
-            temp = stringOfWords[i];
-        }
+  stringOfWords = stringOfWords.split(" ");
+  var temp = "";
+
+  for (var i = 0; i < stringOfWords.length; i++) {
+    if (stringOfWords[i].length >= temp.length) {
+      temp = stringOfWords[i];
     }
-    return temp;
+  }
+
+  return temp;
 }

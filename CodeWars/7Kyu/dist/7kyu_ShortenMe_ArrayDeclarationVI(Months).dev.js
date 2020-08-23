@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Shorten Me: Array Declaration VI (Months)
@@ -13,5 +15,6 @@ Coding Limitation:
 Less than 120 characters
 
   */
-
-s = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember', array = _ => (s + s).match(/[A-Z][a-z]+/g);
+s = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember', array = function array(_) {
+  return (s + s).match(/[A-Z][a-z]+/g);
+};

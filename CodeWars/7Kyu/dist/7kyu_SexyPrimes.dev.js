@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 7kyu - Sexy Primes <3x6
@@ -27,10 +29,10 @@ function sexy_prime(x, y){
 }
 
   */
-
 function isPrime(n) {
-    for (let i = 2, s = Math.sqrt(n); i <= s; i++)
-        if (n % i === 0)
-            return false;
-    return n > 1;
+  for (var i = 2, s = Math.sqrt(n); i <= s; i++) {
+    if (n % i === 0) return false;
+  }
+
+  return n > 1;
 }

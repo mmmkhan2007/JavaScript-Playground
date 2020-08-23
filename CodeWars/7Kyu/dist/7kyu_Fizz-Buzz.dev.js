@@ -1,3 +1,5 @@
+"use strict";
+
 /*  
 
 Language: Javascript
@@ -13,19 +15,16 @@ Example:
 solution(20) should return [5, 2, 1]
 
   */
-
 // Solution 1:
 function solution(n) {
-    let arr = [0, 0, 0]
-    for (let i = 1; i < n; i++) {
-        if (i % 3 === 0 && i % 5 === 0) arr[2] += 1;
-        else if (i % 3 !== 0 && i % 5 === 0) arr[1] += 1;
-        else if (i % 3 === 0 && i % 5 !== 0) arr[0] += 1;
-    }
-    return arr;
-}
+  var arr = [0, 0, 0];
 
-// Sample Tests Passed:
+  for (var i = 1; i < n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) arr[2] += 1;else if (i % 3 !== 0 && i % 5 === 0) arr[1] += 1;else if (i % 3 === 0 && i % 5 !== 0) arr[0] += 1;
+  }
+
+  return arr;
+} // Sample Tests Passed:
 // Test.assertDeepEquals(solution(20), [5, 2, 1]);
 // Test.assertDeepEquals(solution(2), [0, 0, 0]);
 // Test.assertDeepEquals(solution(14), [4,2,0]);

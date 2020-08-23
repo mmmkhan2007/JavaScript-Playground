@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 7kyu - Frugal Pizza
@@ -20,10 +22,6 @@ Assume that the pizza is a circular pizza of uniform diameter, and use Math.PI a
 If you are given too few arguments, or if they aren't numbers, then return 0.
 
  */
-
-
-
-
 function pizzaPrice(diameter, price) {
-    return (!diameter || !price || typeof diameter !== "number" || typeof price !== "number") ? 0 : Math.round(price / (Math.pow(diameter / 2, 2) * Math.PI) * 100) / 100
+  return !diameter || !price || typeof diameter !== "number" || typeof price !== "number" ? 0 : Math.round(price / (Math.pow(diameter / 2, 2) * Math.PI) * 100) / 100;
 }
