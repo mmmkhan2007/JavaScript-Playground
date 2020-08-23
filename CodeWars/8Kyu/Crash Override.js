@@ -21,6 +21,14 @@ Happy hacking!
 
 */
 
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
+
 const firstLetter = str => str[0].toUpperCase()
 
 const isValidName = name => /[a-z]/gi.test(name)

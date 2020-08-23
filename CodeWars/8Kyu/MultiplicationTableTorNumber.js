@@ -11,7 +11,9 @@ For example, a multiplication table (string) for number == 5 looks like below:
 8 * 5 = 40
 9 * 5 = 45
 10 * 5 = 50
-P. S. You can use \n in string to jump to the next line. */
+P. S. You can use \n in string to jump to the next line. 
+
+*/
 
 // My Solution
 function multiTable(number) {

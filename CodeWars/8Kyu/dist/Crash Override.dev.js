@@ -22,6 +22,9 @@ aliasGen('123abc', 'Petrovic') === 'Your name must start with a letter from A - 
 Happy hacking!
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var firstLetter = function firstLetter(str) {
   return str[0].toUpperCase();
 };

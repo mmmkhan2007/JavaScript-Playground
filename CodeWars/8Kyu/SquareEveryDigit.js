@@ -30,3 +30,13 @@ function squareDigits(num) {
 
 // Sample Tests Passed:
 // Test.assertEquals(squareDigits(9119), 811181);
+
+
+
+
+
+
+
+
+
+/* */
