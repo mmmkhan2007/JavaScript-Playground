@@ -1,12 +1,14 @@
-// Language: Javascript
-// Level: 8kyu
-// Name of Problem: Switch it Up!
+/*
 
-// Instructions: When provided with a number between 0-9, return it in words.
-// Input :: 1 Output :: "One"
-// If your language supports it, try using a switch statement.
+Language: Javascript
+Level: 8kyu
+Name of Problem: Switch it Up!
 
+Instructions: When provided with a number between 0-9, return it in words.
+Input :: 1 Output :: "One"
+If your language supports it, try using a switch statement.
 
+ */
 
 
 //#############################################################
@@ -43,3 +45,8 @@ const switchItUp = number => {
 // Test.assertEquals(switchItUp(1),"One");
 // Test.assertEquals(switchItUp(3),"Three");
 // Test.assertEquals(switchItUp(5),"Five");
+
+
+
+
+/* */

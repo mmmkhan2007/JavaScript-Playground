@@ -1,12 +1,23 @@
-// Language: Javascript
-// Level: 8kyu
-// Name: Keep up the hoop
+/*
 
-// Instructions: Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
-// Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
+Language: Javascript
+Level: 8kyu
+Name: Keep up the hoop
 
-// -If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
-// -If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+Instructions: Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
+Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
+
+-If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+-If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+
+
+ */
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 // Solution:
 function hoopCount(n) {
@@ -20,8 +31,3 @@ function hoopCount(n) {
 // Sample Tests Passed:
 // Test.assertEquals(hoopCount(3),"Keep at it until you get it" ) 
 // Test.assertEquals(hoopCount(11),"Great, now move on to tricks" )
-
-
-
-
-/* */

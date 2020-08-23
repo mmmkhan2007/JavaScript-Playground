@@ -1,15 +1,14 @@
-// 8kyu - Kata Example Twist
+/* 
 
-// This is an easy twist to the example kata (provided by Codewars when 
-// learning how to create your own kata).
+8kyu - Kata Example Twist
 
-// Add the value "codewars" to the array websites/Websites 1,000 times.
+This is an easy twist to the example kata (provided by Codewars when 
+learning how to create your own kata).
 
-// var websites = []
+Add the value "codewars" to the array websites/Websites 1,000 times.
+
+var websites = []
+
+ */
 
 var websites = Array(1000).fill("codewars");
-
-
-
-
-/* */

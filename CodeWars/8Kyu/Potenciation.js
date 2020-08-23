@@ -1,22 +1,23 @@
-// 8kyu - Potenciation
+/* 
 
-// The function takes in 2 inputs x and y, and should return x to the power of y
+8kyu - Potenciation
 
-// Simple, right? But you're NOT allowed to use Math.pow();
+The function takes in 2 inputs x and y, and should return x to the power of y
 
-// Obs: x and y will be naturals, so DON'T take fractions into consideration;
+Simple, right? But you're NOT allowed to use Math.pow();
 
-// Great coding <3
+Obs: x and y will be naturals, so DON'T take fractions into consideration;
+
+Great coding <3
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 
 const power = (x, y) => x ** y;
-
-
-
-
-
-
-
-
-
-
-/* */

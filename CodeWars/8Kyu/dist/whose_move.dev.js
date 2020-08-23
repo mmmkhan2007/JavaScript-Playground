@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 https://www.codewars.com/kata/simple-fun-number-261-whose-move
@@ -15,14 +17,10 @@ For lastPlayer = "black" and win = false, the output should be "white".
 For lastPlayer = "white" and win = true, the output should be "white".
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function whoseMove(lastPlayer, win) {
-    lastPlayer === "black" ? nextPlayer = "white" : nextPlayer = "black";
-    return win ? lastPlayer : nextPlayer;
+  lastPlayer === "black" ? nextPlayer = "white" : nextPlayer = "black";
+  return win ? lastPlayer : nextPlayer;
 }

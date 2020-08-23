@@ -1,8 +1,19 @@
-// Language: Javascript
-// Level: 8kyu
-// Name of Problem: String Repeat
+/*
 
-// Instructions: Write a function called repeatString which repeats the given String src exactly count times.
+Language: Javascript
+Level: 8kyu
+Name of Problem: String Repeat
+
+Instructions: Write a function called repeatString which repeats the given String src exactly count times.
+
+ */
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 // Examples:
 repeatStr(6, "I") // "IIIIII"

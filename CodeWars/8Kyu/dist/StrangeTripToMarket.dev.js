@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 https://www.codewars.com/kata/a-strange-trip-to-the-market
@@ -7,10 +9,9 @@ There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Mo
 Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. Note: It can also be written as 3.50 or three fifty.
 
 */
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-const isLockNessMonster = (s) => /th?ree fi(dd|ft)y|3\.50?/i.test(s);
-
-// the h?ree part will only match an "h" ONLY IF its followed by "ree fi(dd|ft)y"
+var isLockNessMonster = function isLockNessMonster(s) {
+  return /th?ree fi(dd|ft)y|3\.50?/i.test(s);
+}; // the h?ree part will only match an "h" ONLY IF its followed by "ree fi(dd|ft)y"

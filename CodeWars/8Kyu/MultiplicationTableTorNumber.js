@@ -15,6 +15,13 @@ P. S. You can use \n in string to jump to the next line.
 
 */
 
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 // My Solution
 function multiTable(number) {
     return [...Array(10)].map((currentNumber, index) => `${index + 1} * ${number} = ${ (index + 1) * number}`).join('\n');

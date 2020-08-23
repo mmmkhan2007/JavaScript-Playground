@@ -1,25 +1,27 @@
-// 8kyu - Repeat It
+/*
 
-// Create a function called repeatIt that takes in a string and a number (n).
+8kyu - Repeat It
 
-// The function should return a string that repeats the initial passed in string (n) 
-// number of times.
+Create a function called repeatIt that takes in a string and a number (n).
 
-// EXAMPLE:
+The function should return a string that repeats the initial passed in string (n) 
+number of times.
 
-// If you pass in string "Hi" with a number (2)
+EXAMPLE:
 
-// --> "HiHi"
+If you pass in string "Hi" with a number (2)
 
-// If anything other than a string is passed in you should return "Not a string"
+--> "HiHi"
+
+If anything other than a string is passed in you should return "Not a string"
+
+*/
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 var repeatIt = function(str, n) {
     return (typeof str !== "string") ? "Not a string" : str.repeat(n);
 }
-
-
-
-
-
-
-/* */

@@ -1,12 +1,22 @@
-// Language: Javascript
-// Level: 7kyu
-// Name of Problem: Square Every Digit
+/*
 
-// Instructions: You are asked to square every digit of a number.
-// The function accepts an integer and returns an integer
+Language: Javascript
+Level: 7kyu
+Name of Problem: Square Every Digit
 
-// Example:
-// If we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+Instructions: You are asked to square every digit of a number.
+The function accepts an integer and returns an integer
+
+Example:
+If we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+ */
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 // Solution 1:
 function squareDigits(num) {
@@ -30,13 +40,3 @@ function squareDigits(num) {
 
 // Sample Tests Passed:
 // Test.assertEquals(squareDigits(9119), 811181);
-
-
-
-
-
-
-
-
-
-/* */
