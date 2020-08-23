@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Count by X
@@ -14,16 +16,15 @@ countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
 countBy(2,5) === [2,4,6,8,10]
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function countBy(x, n) {
-    let arr = [];
-    for (i = 1; i <= n; i++)
-        arr.push(x * i);
-    return arr;
+  var arr = [];
+
+  for (i = 1; i <= n; i++) {
+    arr.push(x * i);
+  }
+
+  return arr;
 }

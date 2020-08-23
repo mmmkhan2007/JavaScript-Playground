@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Evil or Odious
@@ -15,14 +17,10 @@ case of odious number.
 good luck :)
 
 */
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function evil(n) {
-    n = (n >>> 0).toString(2).replace(/0/g, "");
-    return (n.length % 2 === 1) ? "It\'s Odious!" : "It's Evil!";
+  n = (n >>> 0).toString(2).replace(/0/g, "");
+  return n.length % 2 === 1 ? "It\'s Odious!" : "It's Evil!";
 }

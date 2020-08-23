@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - Exclamation marks series 
@@ -23,16 +25,13 @@ Note
 Please don't post issue about difficulty or duplicate.
 
 */
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function remove(s, n) {
-    for (let i = 0; i < n; i++) {
-        s = s.replace('!', '');
-    }
-    return s;
+  for (var i = 0; i < n; i++) {
+    s = s.replace('!', '');
+  }
+
+  return s;
 }

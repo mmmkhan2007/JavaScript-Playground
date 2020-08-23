@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Decibel Scale
@@ -18,15 +20,9 @@ convenient way. Your task is to simply calculate the loudness of a sound wave, g
 its intensity as a parameter to the dBScale/DbScale/db_scale function.
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function dBScale(intensity) {
-    return 10 * Math.log10(intensity / Math.pow(10, -12));
+  return 10 * Math.log10(intensity / Math.pow(10, -12));
 }

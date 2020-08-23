@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Description:
@@ -20,12 +22,14 @@ aliasGen('123abc', 'Petrovic') === 'Your name must start with a letter from A - 
 Happy hacking!
 
 */
+var firstLetter = function firstLetter(str) {
+  return str[0].toUpperCase();
+};
 
-const firstLetter = str => str[0].toUpperCase()
+var isValidName = function isValidName(name) {
+  return /[a-z]/gi.test(name);
+};
 
-const isValidName = name => /[a-z]/gi.test(name)
-
-const aliasGen = (fName, sName) =>
-    isValidName(fName[0]) && isValidName(sName[0]) ?
-    `${firstName[firstLetter(fName)]} ${surname[firstLetter(sName)]}` :
-    'Your name must start with a letter from A - Z.'
+var aliasGen = function aliasGen(fName, sName) {
+  return isValidName(fName[0]) && isValidName(sName[0]) ? "".concat(firstName[firstLetter(fName)], " ").concat(surname[firstLetter(sName)]) : 'Your name must start with a letter from A - Z.';
+};

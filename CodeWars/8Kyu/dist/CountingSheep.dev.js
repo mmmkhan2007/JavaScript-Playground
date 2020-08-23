@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - Counting Sheep
@@ -19,15 +21,11 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 
  */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter(a => a).length;
+  return arrayOfSheep.filter(function (a) {
+    return a;
+  }).length;
 }

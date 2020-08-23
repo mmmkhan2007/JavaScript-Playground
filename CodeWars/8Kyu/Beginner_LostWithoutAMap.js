@@ -1,16 +1,18 @@
-// 8kyu - Beginner - Lost Without a Map
+/*
 
-// Given an array of integers, return a new array with each value doubled.
+8kyu - Beginner - Lost Without a Map
 
-// For example:
+Given an array of integers, return a new array with each value doubled.
 
-// [1, 2, 3] --> [2, 4, 6]
+For example:
 
-// For the beginner, try to use the map method - it comes in very handy quite a lot so is a good one to know.
+[1, 2, 3] --> [2, 4, 6]
+
+For the beginner, try to use the map method - it comes in very handy quite a lot so is a good one to know.
+
+*/
 
 
-
-/* */
 
 
 

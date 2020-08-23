@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 
@@ -10,16 +12,9 @@ Ruby: If you need help, here's some reference material:
 http://www.rubycuts.com/enum-include
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function include(arr, item) {
-    return arr.includes(item);
+  return arr.includes(item);
 }

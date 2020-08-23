@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Do you speak "English"
@@ -15,13 +17,9 @@ Return value as boolean values, true for the string to contains "English",
 false for it does not.
 
 */
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function spEng(sentence) {
-    return /(english)/gi.test(sentence);
+  return /(english)/gi.test(sentence);
 }

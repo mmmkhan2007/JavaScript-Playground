@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Expressions Matter
@@ -37,12 +39,9 @@ After placing signs and brackets, the Maximum value obtained from the expression
 9 * (1+1) = 18.
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-let expressionMatter = (a, b, c) => Math.max(a + b + c, a * (b + c), (a + b) * c, a * b * c);
+var expressionMatter = function expressionMatter(a, b, c) {
+  return Math.max(a + b + c, a * (b + c), (a + b) * c, a * b * c);
+};

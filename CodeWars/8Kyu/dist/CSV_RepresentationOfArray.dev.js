@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - CSV Representation of Array
@@ -21,7 +23,8 @@ output:
 Array's length > 2.
 
 */
-
-
-
-let toCsvText = arr => arr.map(a => a.join(",")).join("\n");
+var toCsvText = function toCsvText(arr) {
+  return arr.map(function (a) {
+    return a.join(",");
+  }).join("\n");
+};

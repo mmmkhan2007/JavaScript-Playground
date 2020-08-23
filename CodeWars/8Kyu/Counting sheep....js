@@ -1,20 +1,30 @@
-// Consider an array/list of sheep where some sheep may be missing from
-//  their place. We need a function that counts the number of sheep 
-// present in the array (true means present).
+/* 
 
-// For example,
+Consider an array/list of sheep where some sheep may be missing from
+ their place. We need a function that counts the number of sheep 
+present in the array (true means present).
 
-// [true,  true,  true,  false,
-//   true,  true,  true,  true ,
-//   true,  false, true,  false,
-//   true,  false, false, true ,
-//   true,  true,  true,  true ,
-//   false, false, true,  true]
-// The correct answer would be 17.
+For example,
 
-// Hint: Don't forget to check for bad values like null/undefined
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
 
-///////////// Solution //////////////
+Hint: Don't forget to check for bad values like null/undefined
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 
 function countSheeps(arrayOfSheep) {
     // TODO May the force be with you
