@@ -34,23 +34,29 @@ double(1, 10) => 0.5580321939764581
 double(10, 100) => 0.6832948559787737
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-function doubles(maxk, maxn) {
-  var fn = function fn(a, b) {
-    return 1 / (k * Math.pow(n + 1, 2 * k));
-  },
-      k = 1,
-      s = 0;
 
-  while (k <= maxk) {
-    for (var n = 1; n <= maxn; n++) {
-      s += fn(k, n);
+
+
+function doubles(maxk, maxn) {
+    var fn = function fn(a, b) {
+            return 1 / (k * Math.pow(n + 1, 2 * k));
+        },
+        k = 1,
+        s = 0;
+
+    while (k <= maxk) {
+        for (var n = 1; n <= maxn; n++) {
+            s += fn(k, n);
+        }
+
+        k++;
     }
 
-    k++;
-  }
-
-  return s;
+    return s;
 }

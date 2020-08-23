@@ -23,26 +23,35 @@ array = [[1,2,3],
 snail(array) #=> [1,2,3,4,5,6,7,8,9]
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
+
 var snail = function snail(arr) {
-  var result = [];
 
-  while (arr.length > 0) {
-    result = result.concat.apply(result, arr.splice(0, 1));
 
-    for (var i = 0; i < arr.length; i += 1) {
-      result = result.concat(arr[i].splice(arr.length));
+    var result = [];
+
+    while (arr.length > 0) {
+        result = result.concat.apply(result, arr.splice(0, 1));
+
+        for (var i = 0; i < arr.length; i += 1) {
+            result = result.concat(arr[i].splice(arr.length));
+        }
+
+        var temp = [].concat.apply([], arr.splice(arr.length - 1)).reverse();
+        result = result.concat.apply(result, temp);
+
+        for (var _i = arr.length - 1; _i >= 0; _i -= 1) {
+            result = result.concat(arr[_i].splice(0, 1));
+        }
     }
 
-    var temp = [].concat.apply([], arr.splice(arr.length - 1)).reverse();
-    result = result.concat.apply(result, temp);
-
-    for (var _i = arr.length - 1; _i >= 0; _i -= 1) {
-      result = result.concat(arr[_i].splice(0, 1));
-    }
-  }
-
-  return result;
+    return result;
 };

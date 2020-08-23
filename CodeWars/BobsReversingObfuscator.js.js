@@ -21,6 +21,11 @@ Your function must decode and return the original string.
 */
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 
 function decoder(encoded, marker) {

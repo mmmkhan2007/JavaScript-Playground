@@ -36,29 +36,36 @@ findDifferent('The same text', 'The same text') // {index: -1, addedText: '', de
 
 
 */
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 function findDifferent(str1, str2) {
-  var len1 = str1.length,
-      len2 = str2.length;
-  var h = 0,
-      t = 0,
-      lim = Math.min(len1, len2);
 
-  while (h < lim && str1[h] === str2[h]) {
-    h++;
-  }
 
-  lim -= h;
+    var len1 = str1.length,
+        len2 = str2.length;
+    var h = 0,
+        t = 0,
+        lim = Math.min(len1, len2);
 
-  while (t < lim && str1[len1 - 1 - t] === str2[len2 - 1 - t]) {
-    t++;
-  }
+    while (h < lim && str1[h] === str2[h]) {
+        h++;
+    }
 
-  return {
-    index: str1 === str2 ? -1 : h,
-    addedText: str2.slice(h, len2 - t),
-    deletedText: str1.slice(h, len1 - t)
-  };
+    lim -= h;
+
+    while (t < lim && str1[len1 - 1 - t] === str2[len2 - 1 - t]) {
+        t++;
+    }
+
+    return {
+        index: str1 === str2 ? -1 : h,
+        addedText: str2.slice(h, len2 - t),
+        deletedText: str1.slice(h, len1 - t)
+    };
 }

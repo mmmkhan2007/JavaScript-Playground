@@ -22,6 +22,9 @@ validISBN10('1234512345') ; should return false
 
 
 */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var validISBN10 = function validISBN10(isbn) {
   if (!/[0-9]{9}[0-9X]/.test(isbn)) {
     return false;

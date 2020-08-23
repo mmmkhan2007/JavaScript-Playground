@@ -17,26 +17,35 @@ Example :
  [ [1, 2], [1, 3], [1, 4] ] produces the string (6,12)(4,12)(3,12)
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-var gcd = function gcd(a, b) {
-  if (!b) {
-    return a;
-  }
 
-  return gcd(b, a % b);
+
+
+
+var gcd = function gcd(a, b) {
+
+
+    if (!b) {
+        return a;
+    }
+
+    return gcd(b, a % b);
 };
 
 var lcm = function lcm(d1, d2) {
-  return d1 * d2 / gcd(d1, d2);
+    return d1 * d2 / gcd(d1, d2);
 };
 
 var convertFrac = function convertFrac(arr) {
-  var denom = arr.reduce(function (a, b) {
-    return lcm(b[1], a);
-  }, 1);
-  return arr.map(function (a) {
-    return "(".concat(a[0] * (denom / a[1]), ",").concat(a[1] * (denom / a[1]), ")");
-  }).join('');
+    var denom = arr.reduce(function(a, b) {
+        return lcm(b[1], a);
+    }, 1);
+    return arr.map(function(a) {
+        return "(".concat(a[0] * (denom / a[1]), ",").concat(a[1] * (denom / a[1]), ")");
+    }).join('');
 };

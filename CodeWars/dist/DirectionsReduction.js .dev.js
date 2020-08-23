@@ -56,18 +56,25 @@ other and can't become such. Hence the result path is itself : ["NORTH", "WEST",
 "EAST"].
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
+
 var dirReduc = function dirReduc(arr) {
-  var str = arr.join(' ');
-  var re = /NORTH\s+SOUTH|SOUTH\s+NORTH|WEST\s+EAST|EAST\s+WEST/;
+    var str = arr.join(' ');
+    var re = /NORTH\s+SOUTH|SOUTH\s+NORTH|WEST\s+EAST|EAST\s+WEST/;
 
-  while (re.test(str)) {
-    str = str.replace(re, '');
-  }
+    while (re.test(str)) {
+        str = str.replace(re, '');
+    }
 
-  return str.split(" ").filter(function (a) {
-    return !!a;
-  });
+    return str.split(" ").filter(function(a) {
+        return !!a;
+    });
 };

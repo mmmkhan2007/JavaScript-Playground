@@ -28,27 +28,33 @@ regexp
 "new"
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 var Not = function Not(A) {
-  return A(False)(True);
+    return A(False)(True);
 };
 
 var And = function And(A) {
-  return function (B) {
-    return A(B)(A);
-  };
+    return function(B) {
+        return A(B)(A);
+    };
 };
 
 var Or = function Or(A) {
-  return function (B) {
-    return A(A)(B);
-  };
+    return function(B) {
+        return A(A)(B);
+    };
 };
 
 var Xor = function Xor(A) {
-  return function (B) {
-    return A(Not(B))(B);
-  };
+    return function(B) {
+        return A(Not(B))(B);
+    };
 };

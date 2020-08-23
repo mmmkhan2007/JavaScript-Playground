@@ -22,6 +22,13 @@ validISBN10('1234512345') ; should return false
 */
 
 
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 let validISBN10 = function(isbn) {
     if (!/[0-9]{9}[0-9X]/.test(isbn)) { return false; }
     isbn = isbn.split("").map((a, i) => ((a === "X") ? 10 : a) * (i + 1));

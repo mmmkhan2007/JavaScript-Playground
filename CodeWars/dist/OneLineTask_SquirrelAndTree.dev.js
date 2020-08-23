@@ -25,9 +25,15 @@ For h = 8, H = 9, S = 37, the output should be 42.5869.
 
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 squirrel = function squirrel(h, H, S) {
-  return +Math.hypot(H, H * S / h).toFixed(4);
+    return +Math.hypot(H, H * S / h).toFixed(4);
 };

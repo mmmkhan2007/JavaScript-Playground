@@ -21,35 +21,42 @@ My Note : This is a very bruteforce method that I should improve on, but for pos
 will keep to note my progress.
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
+
 var maxSequence = function maxSequence(arr) {
-  if (arr.filter(function (a) {
-    return a > -1;
-  }).length < 0 || arr.length <= 0) {
-    return 0;
-  }
-
-  var maxNum = 0,
-      temp,
-      len = arr.length;
-
-  for (var l = 0, k = 1; l <= len; l++) {
-    temp = arr.slice(l, l + k).reduce(function (a, b) {
-      return a + b;
-    }, 0);
-
-    if (temp > maxNum) {
-      maxNum = temp;
+    if (arr.filter(function(a) {
+            return a > -1;
+        }).length < 0 || arr.length <= 0) {
+        return 0;
     }
 
-    if (l === len) {
-      len -= 1;
-      l = -1;
-      k++;
-    }
-  }
+    var maxNum = 0,
+        temp,
+        len = arr.length;
 
-  return maxNum;
+    for (var l = 0, k = 1; l <= len; l++) {
+        temp = arr.slice(l, l + k).reduce(function(a, b) {
+            return a + b;
+        }, 0);
+
+        if (temp > maxNum) {
+            maxNum = temp;
+        }
+
+        if (l === len) {
+            len -= 1;
+            l = -1;
+            k++;
+        }
+    }
+
+    return maxNum;
 };

@@ -16,38 +16,45 @@ A string representation of an integer will contain no characters besides the ten
 numerals "0" to "9".
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
+
 function sumStrings(a, b) {
-  var arrA = a.split("").reverse().map(function (a) {
-    return parseInt(a);
-  }),
-      arrB = b.split("").reverse().map(function (b) {
-    return parseInt(b);
-  });
-  var maxLength = Math.max(a.length, b.length),
-      carry = 0,
-      num = "";
+    var arrA = a.split("").reverse().map(function(a) {
+            return parseInt(a);
+        }),
+        arrB = b.split("").reverse().map(function(b) {
+            return parseInt(b);
+        });
+    var maxLength = Math.max(a.length, b.length),
+        carry = 0,
+        num = "";
 
-  for (var i = 0; i < maxLength; i++) {
-    if (isNaN(arrA[i])) {
-      arrA.push(0);
+    for (var i = 0; i < maxLength; i++) {
+        if (isNaN(arrA[i])) {
+            arrA.push(0);
+        }
+
+        if (isNaN(arrB[i])) {
+            arrB.push(0);
+        }
+
+        if (arrA[i] + arrB[i] + carry > 9) {
+            num += ((arrA[i] + arrB[i] + carry) % 10).toString();
+            carry = 1;
+            if (i === maxLength - 1 && carry === 1) num += "1";
+        } else {
+            num += ((arrA[i] + arrB[i] + carry) % 10).toString();
+            carry = 0;
+        }
     }
 
-    if (isNaN(arrB[i])) {
-      arrB.push(0);
-    }
-
-    if (arrA[i] + arrB[i] + carry > 9) {
-      num += ((arrA[i] + arrB[i] + carry) % 10).toString();
-      carry = 1;
-      if (i === maxLength - 1 && carry === 1) num += "1";
-    } else {
-      num += ((arrA[i] + arrB[i] + carry) % 10).toString();
-      carry = 0;
-    }
-  }
-
-  return num.split("").reverse().join("").replace(/\b0+/g, '');
+    return num.split("").reverse().join("").replace(/\b0+/g, '');
 }

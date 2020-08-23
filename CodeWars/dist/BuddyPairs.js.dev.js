@@ -32,24 +32,30 @@ for C: The returned string will be free'd.
 See more examples in "Sample Tests:" of your language.
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-function buddy(start, limit) {
-  var s = function s(n) {
-    var res = 0;
 
-    for (var i = 2; i <= Math.sqrt(n); i++) {
-      if (n % i === 0) i === n / i ? res += i : res += i + n / i;
+
+
+function buddy(start, limit) {
+    var s = function s(n) {
+        var res = 0;
+
+        for (var i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) i === n / i ? res += i : res += i + n / i;
+        }
+
+        return res;
+    };
+
+    for (var i = start; i <= limit; i++) {
+        var si = s(i);
+        if (i < si && i === s(si)) return [i, si];
     }
 
-    return res;
-  };
-
-  for (var i = start; i <= limit; i++) {
-    var si = s(i);
-    if (i < si && i === s(si)) return [i, si];
-  }
-
-  return "Nothing";
+    return "Nothing";
 }

@@ -51,37 +51,45 @@ Format.div(
 // returns "<div><h1>Title</h1><p>Paragraph with a <span>span</span>.</p></div>"
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
+
 var Format = {
-  tags: ['div', 'h1', 'p', 'span']
+
+    tags: ['div', 'h1', 'p', 'span']
 };
 
 var make = function make(container, chain) {
-  container = container || {};
-  chain = chain || [];
+    container = container || {};
+    chain = chain || [];
 
-  var method = function method() {
-    for (var _len = arguments.length, text = new Array(_len), _key = 0; _key < _len; _key++) {
-      text[_key] = arguments[_key];
-    }
+    var method = function method() {
+        for (var _len = arguments.length, text = new Array(_len), _key = 0; _key < _len; _key++) {
+            text[_key] = arguments[_key];
+        }
 
-    return chain.reduce(function (inner, tag) {
-      return "<".concat(tag, ">").concat(inner, "</").concat(tag, ">");
-    }, text.join(""));
-  };
+        return chain.reduce(function(inner, tag) {
+            return "<".concat(tag, ">").concat(inner, "</").concat(tag, ">");
+        }, text.join(""));
+    };
 
-  Format.tags.forEach(function (tag) {
-    Object.defineProperty(container, tag, {
-      get: function get() {
-        return make(undefined, [tag].concat(_toConsumableArray(chain)));
-      }
+    Format.tags.forEach(function(tag) {
+        Object.defineProperty(container, tag, {
+            get: function get() {
+                return make(undefined, [tag].concat(_toConsumableArray(chain)));
+            }
+        });
     });
-  });
-  Object.assign(method, container);
-  Object.setPrototypeOf(method, container);
-  return method;
+    Object.assign(method, container);
+    Object.setPrototypeOf(method, container);
+    return method;
 };
 
 var form = make(Format);

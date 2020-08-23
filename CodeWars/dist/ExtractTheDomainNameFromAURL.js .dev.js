@@ -13,10 +13,16 @@
   domainName("http://www.zombie-bites.com") == "zombie-bites"
   domainName("https://www.cnet.com") == "cnet"
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 var domainName = function domainName(url) {
-  var match = url.match(/(https?\:\/\/)?([w]{0,3}\.)?([^\.]+)/);
-  return match[match.length - 1];
+    var match = url.match(/(https?\:\/\/)?([w]{0,3}\.)?([^\.]+)/);
+    return match[match.length - 1];
 };

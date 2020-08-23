@@ -74,50 +74,56 @@ For those who don't know the game, here are some information about rules and how
 to play Sudoku: 
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-function checkVector(arr) {
-  for (var i = 1; i < 10; i++) {
-    if (arr.indexOf(i) < 0) return false;
-  }
 
-  return true;
+
+
+function checkVector(arr) {
+    for (var i = 1; i < 10; i++) {
+        if (arr.indexOf(i) < 0) return false;
+    }
+
+    return true;
 }
 
 function doneOrNot(board) {
-  var region1 = [],
-      region2 = [],
-      region3 = [],
-      valid = true;
+    var region1 = [],
+        region2 = [],
+        region3 = [],
+        valid = true;
 
-  for (var i = 0; i < board.length; i++) {
-    if (!checkVector(board[i])) valid = false;
-  }
-
-  for (var _i = 0; _i < 9; _i++) {
-    var arr = [];
-
-    for (var j = 0; j < 9; j++) {
-      arr = arr.concat(board[j][_i]);
+    for (var i = 0; i < board.length; i++) {
+        if (!checkVector(board[i])) valid = false;
     }
 
-    if (!checkVector(arr)) valid = false;
-  }
+    for (var _i = 0; _i < 9; _i++) {
+        var arr = [];
 
-  for (var _i2 = 0; _i2 < 9; _i2++) {
-    var _ref = [region1.concat(board[_i2].slice(0, 3)), region2.concat(board[_i2].slice(3, 6)), region3.concat(board[_i2].slice(6, 9))];
-    region1 = _ref[0];
-    region2 = _ref[1];
-    region3 = _ref[2];
+        for (var j = 0; j < 9; j++) {
+            arr = arr.concat(board[j][_i]);
+        }
 
-    if ((_i2 + 1) % 3 === 0) {
-      if (!checkVector(region1) || !checkVector(region2) || !checkVector(region3)) valid = false;
-      region1 = [];
-      region2 = [];
-      region3 = [];
+        if (!checkVector(arr)) valid = false;
     }
-  }
 
-  return valid ? "Finished!" : "Try again!";
+    for (var _i2 = 0; _i2 < 9; _i2++) {
+        var _ref = [region1.concat(board[_i2].slice(0, 3)), region2.concat(board[_i2].slice(3, 6)), region3.concat(board[_i2].slice(6, 9))];
+        region1 = _ref[0];
+        region2 = _ref[1];
+        region3 = _ref[2];
+
+        if ((_i2 + 1) % 3 === 0) {
+            if (!checkVector(region1) || !checkVector(region2) || !checkVector(region3)) valid = false;
+            region1 = [];
+            region2 = [];
+            region3 = [];
+        }
+    }
+
+    return valid ? "Finished!" : "Try again!";
 }

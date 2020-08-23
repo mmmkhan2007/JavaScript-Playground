@@ -15,29 +15,35 @@ interleave([]) === []
 
 
 */
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 function interleave() {
-  var bool = true,
-      res = [],
-      ct = 0;
-  var arr = Array.prototype.slice.call(arguments);
+    var bool = true,
+        res = [],
+        ct = 0;
+    var arr = Array.prototype.slice.call(arguments);
 
-  while (bool) {
-    bool = false;
-    arr.forEach(function (arr) {
-      var arrValue;
+    while (bool) {
+        bool = false;
+        arr.forEach(function(arr) {
+            var arrValue;
 
-      if (typeof arr[ct] !== 'undefined') {
-        arrValue = arr[ct];
-        bool = true;
-      } else arrValue = null;
+            if (typeof arr[ct] !== 'undefined') {
+                arrValue = arr[ct];
+                bool = true;
+            } else arrValue = null;
 
-      res.push(arrValue);
-    });
-    ct++;
-  }
+            res.push(arrValue);
+        });
+        ct++;
+    }
 
-  return res.splice(0, res.length - arguments.length);
+    return res.splice(0, res.length - arguments.length);
 }
