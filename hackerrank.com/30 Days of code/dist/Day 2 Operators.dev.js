@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Objective 
 In this challenge, you'll work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video!
@@ -26,21 +28,11 @@ Calculations:
  
 We round  to the nearest dollar (integer) and then print our result, .
 */
-
-
-
 function solve(meal_cost, tip_percent, tax_percent) {
-    console.log(Math.round(meal_cost + (tip_percent / 100) * meal_cost + (tax_percent / 100) * meal_cost))
-}
+  console.log(Math.round(meal_cost + tip_percent / 100 * meal_cost + tax_percent / 100 * meal_cost));
+} // Write your code here
 
 
+mealCost = Math.round(mealCost + mealCost * tipPercent / 100 + mealCost * taxPercent / 100); // Use console.log() to print to stdout
 
-
-
-
-
-// Write your code here
-mealCost = Math.round(mealCost + (mealCost * tipPercent / 100) + (mealCost * taxPercent / 100));
-
-// Use console.log() to print to stdout
 console.log('The total meal cost is ' + mealCost + ' dollars.');
