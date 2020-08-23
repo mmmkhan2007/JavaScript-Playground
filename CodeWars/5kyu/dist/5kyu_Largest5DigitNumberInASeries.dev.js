@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 5kyu - Largest 5 digit number in a series
@@ -15,22 +17,16 @@ return a five digit integer. The number passed may be as large as 1000 digits.
 Adapted from ProjectEuler.net
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+var solution = function solution(digits) {
+  digits = String(digits);
+  var largest = 0;
 
+  for (var i = 0; i < digits.length - 4; i++) {
+    if (+digits.substr(i, 5) > largest) largest = +digits.substr(i, 5);
+  }
 
-
-
-
-let solution = function(digits) {
-    digits = String(digits);
-    let largest = 0;
-    for (let i = 0; i < digits.length - 4; i++) {
-        if (+digits.substr(i, 5) > largest)
-            largest = +digits.substr(i, 5);
-    }
-    return largest;
-}
+  return largest;
+};

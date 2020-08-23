@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 5kyu - Going to zero or to infinity?
@@ -27,21 +29,17 @@ Keep in mind that factorials grow rather rapidly, and you need to
 handle large inputs.
 
  */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
 function going(n) {
-    let r = 1,
-        a = 1;
-    for (let i = 0; i < n - 1; i++) {
-        a = a / (n - i);
-        r = r + a;
-    }
-    return Math.floor(r * 1000000) / 1000000;
+  var r = 1,
+      a = 1;
+
+  for (var i = 0; i < n - 1; i++) {
+    a = a / (n - i);
+    r = r + a;
+  }
+
+  return Math.floor(r * 1000000) / 1000000;
 }

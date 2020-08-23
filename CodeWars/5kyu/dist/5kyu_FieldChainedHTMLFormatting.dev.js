@@ -1,3 +1,13 @@
+"use strict";
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 /*
 
 5kyu - Field Chained HTML Formatting
@@ -41,30 +51,37 @@ Format.div(
 // returns "<div><h1>Title</h1><p>Paragraph with a <span>span</span>.</p></div>"
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-
-let Format = { tags: ['div', 'h1', 'p', 'span'] }
-
-const make = (container, chain) => {
-    container = container || {};
-    chain = chain || [];
-    let method = (...text) => chain.reduce((inner, tag) => `<${tag}>${inner}</${tag}>`, text.join(""));
-    Format.tags.forEach(tag => {
-        Object.defineProperty(container, tag, {
-            get: () => make(undefined, [tag, ...chain])
-        });
-    });
-    Object.assign(method, container);
-    Object.setPrototypeOf(method, container);
-    return method;
+var Format = {
+  tags: ['div', 'h1', 'p', 'span']
 };
 
-const form = make(Format);
+var make = function make(container, chain) {
+  container = container || {};
+  chain = chain || [];
+
+  var method = function method() {
+    for (var _len = arguments.length, text = new Array(_len), _key = 0; _key < _len; _key++) {
+      text[_key] = arguments[_key];
+    }
+
+    return chain.reduce(function (inner, tag) {
+      return "<".concat(tag, ">").concat(inner, "</").concat(tag, ">");
+    }, text.join(""));
+  };
+
+  Format.tags.forEach(function (tag) {
+    Object.defineProperty(container, tag, {
+      get: function get() {
+        return make(undefined, [tag].concat(_toConsumableArray(chain)));
+      }
+    });
+  });
+  Object.assign(method, container);
+  Object.setPrototypeOf(method, container);
+  return method;
+};
+
+var form = make(Format);

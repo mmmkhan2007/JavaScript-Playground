@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
  Beeramid
 
@@ -22,19 +24,16 @@ beeramid(1500, 2); // should === 12
 beeramid(5000, 3); // should === 16
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+var beeramid = function beeramid(bonus, price) {
+  var beers = ~~(bonus / price),
+      num = 0;
 
+  while (beers >= num * num) {
+    beers -= num * num++;
+  }
 
-
-var beeramid = function(bonus, price) {
-    let beers = ~~(bonus / price),
-        num = 0;
-    while (beers >= num * num)
-        beers -= num * num++;
-    return num > 0 ? num - 1 : 0;
-}
+  return num > 0 ? num - 1 : 0;
+};

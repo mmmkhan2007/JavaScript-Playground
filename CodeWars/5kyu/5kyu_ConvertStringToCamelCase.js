@@ -1,18 +1,34 @@
-// 5kyu - Convert string to camel case
+/* 
 
-// Description:
+5kyu - Convert string to camel case
 
-// Complete the method/function so that it converts dash/underscore delimited words into 
-// camel casing. The first word within the output should be capitalized only if the 
-// original word was capitalized.
+Description:
 
-// Examples:
+Complete the method/function so that it converts dash/underscore delimited words into 
+camel casing. The first word within the output should be capitalized only if the 
+original word was capitalized.
 
-// // returns "theStealthWarrior"
-// toCamelCase("the-stealth-warrior") 
+Examples:
 
-// // returns "TheStealthWarrior"
-// toCamelCase("The_Stealth_Warrior")
+// returns "theStealthWarrior"
+toCamelCase("the-stealth-warrior") 
+
+// returns "TheStealthWarrior"
+toCamelCase("The_Stealth_Warrior")
+
+
+*/
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
+
 
 function capitalize(str, index) {
     str = str.split("");

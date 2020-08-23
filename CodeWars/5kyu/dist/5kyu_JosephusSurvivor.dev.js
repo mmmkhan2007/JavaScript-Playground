@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 5kyu - Josephus Survivor
@@ -27,14 +29,9 @@ the number of the survivor may be too slow; you may assume that both n and k wil
 always be >=1.
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function josephusSurvivor(n, k) {
-    return n <= 1 ? 1 : (josephusSurvivor(n - 1, k) + k - 1) % n + 1;
+  return n <= 1 ? 1 : (josephusSurvivor(n - 1, k) + k - 1) % n + 1;
 }

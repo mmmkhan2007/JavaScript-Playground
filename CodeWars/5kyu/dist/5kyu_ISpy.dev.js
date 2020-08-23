@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 5 kyu - I Spy
@@ -19,32 +21,35 @@ For this kata, implement a spyOn function which takes any function func as a par
 .returned(val) — returns true if spy ever returned val, else returns false
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-
 function spyOn(func) {
-    let call = [],
-        rVal = [],
-        count = 0;
+  var call = [],
+      rVal = [],
+      count = 0;
 
-    let spy = function() {
-        call = [].concat.call(call, ...arguments);
-        var val = func.apply(this, arguments);
-        rVal.push(val);
-        count += 1;
-        return val;
-    }
+  var spy = function spy() {
+    var _concat;
 
-    spy.callCount = () => count;
-    spy.wasCalledWith = n => call.indexOf(n) > -1;
-    spy.returned = n => rVal.indexOf(n) > -1;
+    call = (_concat = [].concat).call.apply(_concat, [call].concat(Array.prototype.slice.call(arguments)));
+    var val = func.apply(this, arguments);
+    rVal.push(val);
+    count += 1;
+    return val;
+  };
 
-    return spy;
+  spy.callCount = function () {
+    return count;
+  };
+
+  spy.wasCalledWith = function (n) {
+    return call.indexOf(n) > -1;
+  };
+
+  spy.returned = function (n) {
+    return rVal.indexOf(n) > -1;
+  };
+
+  return spy;
 }

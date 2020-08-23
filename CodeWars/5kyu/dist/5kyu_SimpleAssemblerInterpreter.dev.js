@@ -1,3 +1,13 @@
+"use strict";
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 /*  
 
 5kyu - Simple Assembler Interpreter
@@ -43,24 +53,24 @@ This kata is based on the Advent of Code 2016 - day 12
 
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function simple_assembler(program) {
-    let obj = {};
-    for (let i = 0; i < program.length; i++) {
-        let [order, vari, opt] = program[i].split(" ");
-        if ('mov' === order) {
-            if (isNaN(opt)) obj[vari] = obj[opt];
-            else obj[vari] = parseInt(opt);
-        } else if ('inc' === order) obj[vari] = ++obj[vari];
-        else if ('dec' === order) obj[vari] = --obj[vari];
-        else if ('jnz' === order && obj[vari] !== 0) i = i + parseInt(opt) - 1;
-    };
-    return obj;
+  var obj = {};
+
+  for (var i = 0; i < program.length; i++) {
+    var _program$i$split = program[i].split(" "),
+        _program$i$split2 = _slicedToArray(_program$i$split, 3),
+        order = _program$i$split2[0],
+        vari = _program$i$split2[1],
+        opt = _program$i$split2[2];
+
+    if ('mov' === order) {
+      if (isNaN(opt)) obj[vari] = obj[opt];else obj[vari] = parseInt(opt);
+    } else if ('inc' === order) obj[vari] = ++obj[vari];else if ('dec' === order) obj[vari] = --obj[vari];else if ('jnz' === order && obj[vari] !== 0) i = i + parseInt(opt) - 1;
+  }
+
+  ;
+  return obj;
 }

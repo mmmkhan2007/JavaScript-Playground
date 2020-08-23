@@ -1,3 +1,13 @@
+"use strict";
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 /*
 
 5kyu - One Line Task - String Isomorphism
@@ -34,13 +44,13 @@ Advice
 If your code length is much longer than the limit, giving up is also a good choice :D
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-p = f => [...f].map(a => f.indexOf(a)).join(), isomorph = (a, b) => p(a) == p(b);
+p = function p(f) {
+  return _toConsumableArray(f).map(function (a) {
+    return f.indexOf(a);
+  }).join();
+}, isomorph = function isomorph(a, b) {
+  return p(a) == p(b);
+};

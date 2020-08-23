@@ -1,3 +1,5 @@
+"use strict";
+
 /*  
 
 5kyu - Convert string to camel case
@@ -17,27 +19,19 @@ toCamelCase("the-stealth-warrior")
 toCamelCase("The_Stealth_Warrior")
 
  */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
 function capitalize(str, index) {
-    str = str.split("");
-    str[index] = str[index].toUpperCase();
-    return str.join("");
+  str = str.split("");
+  str[index] = str[index].toUpperCase();
+  return str.join("");
 }
 
 function toCamelCase(str) {
-    for (var i = 1; i < str.length; i++) {
-        if (str[i - 1] === "-" || str[i - 1] === "_")
-            str = capitalize(str, i);
-    }
-    return str.replace(/[\_\-]/g, "");
+  for (var i = 1; i < str.length; i++) {
+    if (str[i - 1] === "-" || str[i - 1] === "_") str = capitalize(str, i);
+  }
+
+  return str.replace(/[\_\-]/g, "");
 }

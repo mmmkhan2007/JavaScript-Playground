@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 5kyu - Decimal to Factorial and Back
@@ -32,29 +34,27 @@ You have tests with Big Integers in Clojure, Julia, Python, Ruby, Haskell, Ocaml
 Ref: http://en.wikipedia.org/wiki/Factorial_number_system
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function dec2FactString(n) {
-    const d = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    let s = '0',
-        i = 2;
-    while (n) {
-        s = d[n % i] + s;
-        n = Math.floor(n / i);
-        i++
-    }
-    return s;
+  var d = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  var s = '0',
+      i = 2;
+
+  while (n) {
+    s = d[n % i] + s;
+    n = Math.floor(n / i);
+    i++;
+  }
+
+  return s;
 }
 
 function factString2Dec(s) {
-    const d = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    const l = s.length;
-    return s.split('').reduce((a, e, i) => Number(a) * (l - i) + d.indexOf(e), 0);
+  var d = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  var l = s.length;
+  return s.split('').reduce(function (a, e, i) {
+    return Number(a) * (l - i) + d.indexOf(e);
+  }, 0);
 }

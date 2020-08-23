@@ -1,36 +1,48 @@
-// Histogram - V1
+/*
 
-// Description:
+Histogram - V1
 
-// Background
-// A 6-sided dice is rolled a number of times and the results are plotted as a 
-// character-based histogram.
+Description:
 
-// Example:
+Background
+A 6-sided dice is rolled a number of times and the results are plotted as a 
+character-based histogram.
 
-//     10
-//     #
-//     #
-// 7   #
-// #   #
-// #   #     5
-// #   #     #
-// # 3 #     #
-// # # #     #
-// # # # 1   #
-// # # # #   #
-// -----------
-// 1 2 3 4 5 6
-// Task
+Example:
 
-// You will be passed all the dice roll results, and your task is to write the code to return a string representing a histogram, so that when it is printed it has the same format as the example.
+    10
+    #
+    #
+7   #
+#   #
+#   #     5
+#   #     #
+# 3 #     #
+# # #     #
+# # # 1   #
+# # # #   #
+-----------
+1 2 3 4 5 6
+Task
 
-// Notes
+You will be passed all the dice roll results, and your task is to write the code to return a string representing a histogram, so that when it is printed it has the same format as the example.
 
-// There are no trailing spaces on the lines
-// All lines (including the last) end with a newline \n
-// A count is displayed above each bar (unless the count is 0)
-// The number of rolls may vary but is never more than 100
+Notes
+
+There are no trailing spaces on the lines
+All lines (including the last) end with a newline \n
+A count is displayed above each bar (unless the count is 0)
+The number of rolls may vary but is never more than 100
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 
 var histogram = function(results) {
     let highest = Math.max(...results);

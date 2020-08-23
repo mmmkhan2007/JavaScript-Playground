@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 4kyu - Strip Comments
@@ -25,26 +27,22 @@ var result = solution("apples, pears # and bananas\ngrapes\nbananas !apples",
 result should == "apples, pears\ngrapes\nbananas"
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function solution(str, arr) {
-    str = str.split("\n")
-    for (let i = 0; i < str.length; i++) {
-        let shorter;
-        for (let j = 0; j < arr.length; j++) {
-            let idx = str[i].indexOf(arr[j]);
-            if (idx > -1)
-                shorter = (idx < shorter || !shorter) ? idx : shorter;
-        }
-        if (shorter)
-            str[i] = str[i].substr(0, shorter).trim();
+  str = str.split("\n");
+
+  for (var i = 0; i < str.length; i++) {
+    var shorter = void 0;
+
+    for (var j = 0; j < arr.length; j++) {
+      var idx = str[i].indexOf(arr[j]);
+      if (idx > -1) shorter = idx < shorter || !shorter ? idx : shorter;
     }
-    return str.join("\n");
+
+    if (shorter) str[i] = str[i].substr(0, shorter).trim();
+  }
+
+  return str.join("\n");
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 Description:
@@ -10,13 +12,9 @@ of the elements in the nth row and your code should less than 23 characters(trus
 http://i.imgur.com/tzYVdIR.png
 
   */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-nthRowSum = n => 3 * n-- * n + 1
+nthRowSum = function nthRowSum(n) {
+  return 3 * n-- * n + 1;
+};

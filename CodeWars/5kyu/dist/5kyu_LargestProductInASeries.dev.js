@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 5kyu - Largest Product in a Series 
@@ -12,18 +14,15 @@ The input string always has more than five digits.
 Adapted from Project Euler.
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
 function greatestProduct(input) {
-    let max = 0;
-    for (let i = 4; i < input.length; i++)
-        max = Math.max(max, input[i - 4] * input[i - 3] * input[i - 2] * input[i - 1] * input[i]);
-    return max;
+  var max = 0;
+
+  for (var i = 4; i < input.length; i++) {
+    max = Math.max(max, input[i - 4] * input[i - 3] * input[i - 2] * input[i - 1] * input[i]);
+  }
+
+  return max;
 }

@@ -1,3 +1,13 @@
+"use strict";
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 /*    
 5kyu - Some Egyptian Fractions
 
@@ -37,29 +47,34 @@ examples:
 Ref: http://en.wikipedia.org/wiki/Egyptian_fraction
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function decompose(n) {
-    let [a, b] = isNaN(n) ? n.split('/').map(Number) : [Number(n), 1], res = [];
-    while (a % 1)
-        [a, b] = [a * 10, b * 10];
+  var _ref = isNaN(n) ? n.split('/').map(Number) : [Number(n), 1],
+      _ref2 = _slicedToArray(_ref, 2),
+      a = _ref2[0],
+      b = _ref2[1],
+      res = [];
 
-    if (a > b) {
-        res.push(String(a / b >> 0));
-        a %= b;
-    }
+  while (a % 1) {
+    var _ref3 = [a * 10, b * 10];
+    a = _ref3[0];
+    b = _ref3[1];
+  }
 
-    while (a > 0) {
-        let dv = Math.ceil(b / a);
-        res.push('1/' + dv);
-        [a, b] = [a * dv - b, b * dv];
-    }
-    return res;
+  if (a > b) {
+    res.push(String(a / b >> 0));
+    a %= b;
+  }
+
+  while (a > 0) {
+    var dv = Math.ceil(b / a);
+    res.push('1/' + dv);
+    var _ref4 = [a * dv - b, b * dv];
+    a = _ref4[0];
+    b = _ref4[1];
+  }
+
+  return res;
 }
