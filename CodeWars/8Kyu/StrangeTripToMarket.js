@@ -8,9 +8,12 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 
 */
 
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
 const isLockNessMonster = (s) => /th?ree fi(dd|ft)y|3\.50?/i.test(s);
 
 // the h?ree part will only match an "h" ONLY IF its followed by "ree fi(dd|ft)y"

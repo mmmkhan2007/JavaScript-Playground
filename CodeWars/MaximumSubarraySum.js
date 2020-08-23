@@ -1,20 +1,33 @@
-// 5 kyu - Maximum Subarray Sum
+/*
 
-// Description:
+5 kyu - Maximum Subarray Sum
 
-// The maximum sum subarray problem consists in finding the maximum sum of a contiguous 
-// subsequence in an array or list of integers:
+Description:
 
-// maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
-//  should be 6: [4, -1, 2, 1]
-// Easy case is when the list is made up of only positive numbers and the maximum sum is 
-// the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.
+The maximum sum subarray problem consists in finding the maximum sum of a contiguous 
+subsequence in an array or list of integers:
 
-// Empty list is considered to have zero greatest sum. Note that the empty list or array is 
-// also a valid sublist/subarray.
+maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+ should be 6: [4, -1, 2, 1]
+Easy case is when the list is made up of only positive numbers and the maximum sum is 
+the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.
 
-// My Note : This is a very bruteforce method that I should improve on, but for posterity I
-// will keep to note my progress.
+Empty list is considered to have zero greatest sum. Note that the empty list or array is 
+also a valid sublist/subarray.
+
+My Note : This is a very bruteforce method that I should improve on, but for posterity I
+will keep to note my progress.
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 
 let maxSequence = function(arr) {
     if (arr.filter((a) => a > -1).length < 0 || arr.length <= 0) { return 0; }

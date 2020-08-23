@@ -1,17 +1,26 @@
 /*
 
-*/ //  Sum Strings as Numbers
+ Sum Strings as Numbers
 
-// Description:
+Description:
 
-// Given the string representations of two integers, return the string representation of 
-// the sum of those integers.
+Given the string representations of two integers, return the string representation of 
+the sum of those integers.
 
-// For example:
+For example:
 
-// sumStrings('1','2') // => '3'
-// A string representation of an integer will contain no characters besides the ten 
-// numerals "0" to "9".
+sumStrings('1','2') // => '3'
+A string representation of an integer will contain no characters besides the ten 
+numerals "0" to "9".
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 function sumStrings(a, b) {
     var arrA = a.split("").reverse().map(a => parseInt(a)),

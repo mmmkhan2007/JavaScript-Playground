@@ -1,34 +1,48 @@
-//  Find the Differences in Two Lines 
+/*
 
-// At first, it may look easy, but it isn't...
-// Given two versions of the same line as arguments, you have to find the difference between them.
-// You have to write a function which will find:
+ Find the Differences in Two Lines 
 
-// The index where the changes begin
-// The characters which were added
-// The characters which were deleted
-// and return an object with the following values:
-// { index: integer, addedText: string, deletedText: string }
-// Specification
-// addedText and deletedText should be as short as possible.
-// If it can be satisfied in several ways by equally short values, the returned object must have a maximum index.
-// If the two string arguments are the same, then the function has to return the following
-// {index: -1, addedText: '', deletedText: ''}
-// Examples
-// findDifferent('aasaa','asaa') // {index: 1, addedText: "saa", deletedText: "asaa"} - "incorrect"
-// findDifferent('aasaa','asaa') // {index: 1, addedText: "", deletedText: "a"} - "correct"
+At first, it may look easy, but it isn't...
+Given two versions of the same line as arguments, you have to find the difference between them.
+You have to write a function which will find:
 
-// findDifferent("added", "added added")
-// // {index: 0, addedText: "added ", deletedText: ""} - "incorrect"
-// // {index: 5, addedText: " added", deletedText: ""} - "correct"
+The index where the changes begin
+The characters which were added
+The characters which were deleted
+and return an object with the following values:
+{ index: integer, addedText: string, deletedText: string }
+Specification
+addedText and deletedText should be as short as possible.
+If it can be satisfied in several ways by equally short values, the returned object must have a maximum index.
+If the two string arguments are the same, then the function has to return the following
+{index: -1, addedText: '', deletedText: ''}
+Examples
+findDifferent('aasaa','asaa') // {index: 1, addedText: "saa", deletedText: "asaa"} - "incorrect"
+findDifferent('aasaa','asaa') // {index: 1, addedText: "", deletedText: "a"} - "correct"
 
-// findDifferent("Hello John, how are you?", "Hello Jane, how are you?") 
-// // {index: 7, addedText: "ane", deletedText: "ohn"}
+findDifferent("added", "added added")
+// {index: 0, addedText: "added ", deletedText: ""} - "incorrect"
+// {index: 5, addedText: " added", deletedText: ""} - "correct"
 
-// findDifferent("Hello, how is going your day?", "Hey, how is going your day?")
-// // {index: 2, addedText: "y", deletedText: "llo"}
+findDifferent("Hello John, how are you?", "Hello Jane, how are you?") 
+// {index: 7, addedText: "ane", deletedText: "ohn"}
 
-// findDifferent('The same text', 'The same text') // {index: -1, addedText: '', deletedText: ''}; 
+findDifferent("Hello, how is going your day?", "Hey, how is going your day?")
+// {index: 2, addedText: "y", deletedText: "llo"}
+
+findDifferent('The same text', 'The same text') // {index: -1, addedText: '', deletedText: ''}; 
+
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 
 function findDifferent(str1, str2) {
     const len1 = str1.length,

@@ -1,23 +1,27 @@
-// 8kyu - Fundamentals:Return
+/* 
 
-// Make multiple functions that will return the sum, difference, modulus, 
-// product, quotient, and the exponent respectively.
+8kyu - Fundamentals:Return
 
-// Please use the following function names:
+Make multiple functions that will return the sum, difference, modulus, 
+product, quotient, and the exponent respectively.
 
-// addition = add
+Please use the following function names:
 
-// multiply = multiply
+addition = add
 
-// division = divide (both integer and float divisions are accepted)
+multiply = multiply
 
-// modulus = mod
+division = divide (both integer and float divisions are accepted)
 
-// exponential = exponent
+modulus = mod
 
-// subtraction = subt
+exponential = exponent
 
-// Note: All math operations will be: a (operation) b
+subtraction = subt
+
+Note: All math operations will be: a (operation) b
+
+*/
 
 
 
@@ -34,7 +38,3 @@ multiply = lambda a, b: a * b
 divide = lambda a, b: a / b
 mod = lambda a, b: a % b
 exponent = lambda a, b: a ** b
-
-
-
-/* */
