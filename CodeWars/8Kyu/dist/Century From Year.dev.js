@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Introduction
@@ -13,12 +15,9 @@ Hope you enjoy it .. Awaiting for Best Practice Codes
 Enjoy Learning !!!
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-const century = year => Math.ceil(year / 100)
+var century = function century(year) {
+  return Math.ceil(year / 100);
+};

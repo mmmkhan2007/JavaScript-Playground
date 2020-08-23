@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - Aspect Ratio Cropping - Part 1
@@ -16,13 +18,9 @@ your answers up to the nearest integer.
 This kata is part of a series with Aspect Ratio Cropping - Part 2.
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-let aspectRatio = (x, y) => [Math.ceil(16 * y / 9), y];
+var aspectRatio = function aspectRatio(x, y) {
+  return [Math.ceil(16 * y / 9), y];
+};

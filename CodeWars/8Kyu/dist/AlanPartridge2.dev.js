@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8 kyu - Alan Partridge
@@ -15,14 +17,9 @@ X will be either a number or a string. Both are valid.
 Other katas in this series:
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function apple(x) {
-    return (Math.pow(x, 2) > 1000) ? 'It\'s hotter than the sun!!' : 'Help yourself to a honeycomb Yorkie for the glovebox.';
+  return Math.pow(x, 2) > 1000 ? 'It\'s hotter than the sun!!' : 'Help yourself to a honeycomb Yorkie for the glovebox.';
 }

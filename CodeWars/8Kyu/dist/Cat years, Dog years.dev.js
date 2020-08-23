@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Description:
@@ -22,17 +24,9 @@ http://www.slate.com/articles/news_and_politics/explainer/2009/05/a_dogs_life.ht
 If you liked this Kata there is another related one here
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-const humanYearsCatYearsDogYears = humanYears => [
-    humanYears,
-    (humanYears - 1 ? 16 : 11) + 4 * humanYears,
-    (humanYears - 1 ? 14 : 10) + 5 * humanYears,
-];
+var humanYearsCatYearsDogYears = function humanYearsCatYearsDogYears(humanYears) {
+  return [humanYears, (humanYears - 1 ? 16 : 11) + 4 * humanYears, (humanYears - 1 ? 14 : 10) + 5 * humanYears];
+};

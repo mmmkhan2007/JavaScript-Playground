@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Interest in Beats Electronics' headphones and speakers has declined. Critics are arguing that there are more "durable" and "better-sounding" products available for the same price. They've accused the company of emphasizing "appearance" over "quality and functionality". To generate more hype for their product Apple and Beats' founders plan to start a new marketing campaign.
@@ -9,21 +11,16 @@ beatsMarketing("People aren't hearing all the music").lowCase  // "people aren't
 beatsMarketing("You choose the beats").exClamated  // "You choose the beats!"
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function beatsMarketing(slogan) {
-    /* Edit the values of "variation" object,
-    to fit the specifications of the problem. */
-    var variation = {
-        upCase: slogan.toUpperCase(),
-        lowCase: slogan.toLowerCase(),
-        exClamated: slogan + '!'
-    };
-    return variation;
+  /* Edit the values of "variation" object,
+  to fit the specifications of the problem. */
+  var variation = {
+    upCase: slogan.toUpperCase(),
+    lowCase: slogan.toLowerCase(),
+    exClamated: slogan + '!'
+  };
+  return variation;
 }

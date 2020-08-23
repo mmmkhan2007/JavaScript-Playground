@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 
 8kyu - Beginner Series #4 Cockroach
@@ -13,14 +15,9 @@ Note! The input is a Real number (actual type is language dependent) and is
 >= 0. The result should be an Integer.
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-let cockroachSpeed = s => Math.floor(s / 0.036);
+var cockroachSpeed = function cockroachSpeed(s) {
+  return Math.floor(s / 0.036);
+};

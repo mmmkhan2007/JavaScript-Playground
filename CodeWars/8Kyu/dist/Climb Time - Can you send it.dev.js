@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Description:
@@ -9,14 +11,10 @@ BUT if the rope is too short, you're doomed to die or doom your friends! For the
 If the input is not a number, return null because that's just silly.
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function canClimb(ropeLength, climbHeight) {
-    if (typeof ropeLength !== 'number' || typeof climbHeight !== 'number') return null
-    return ropeLength / 2 >= climbHeight / 3.2808
+  if (typeof ropeLength !== 'number' || typeof climbHeight !== 'number') return null;
+  return ropeLength / 2 >= climbHeight / 3.2808;
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Description:
@@ -15,15 +17,9 @@ should return
 "found the needle at position 5"
 
 */
-
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
 function findNeedle(haystack) {
-    return "found the needle at position " + haystack.indexOf("needle");
+  return "found the needle at position " + haystack.indexOf("needle");
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - altERnaTIng cAsE <=> ALTerNAtiNG CaSe
@@ -19,16 +21,11 @@ unaffected
 "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
-String.prototype.toAlternatingCase = function() {
-    return this.split("").map(a => a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()).join('');
-}
+String.prototype.toAlternatingCase = function () {
+  return this.split("").map(function (a) {
+    return a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase();
+  }).join('');
+};

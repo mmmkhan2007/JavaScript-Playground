@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Description:
@@ -8,16 +10,10 @@ addWord(list, 'hello'); // list should be ["hello"]
 addWord(addWord(list, 'how are you'), 'goodbye'); // list should be ["hello","how are you","goodbye"]
 
 */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-
 function addWord(array, string) {
-    array.push(string);
-    return array;
+  array.push(string);
+  return array;
 }
