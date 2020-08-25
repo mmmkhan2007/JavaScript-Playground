@@ -1,3 +1,5 @@
+"use strict";
+
 /**********************************************************************************************************************
 
 After they became famous, the CodeBots all decided to move to a new building and live together.The building is represented by a rectangular matrix of rooms.Each cell in the matrix contains an integer that represents the price of the room.Some rooms are free(their cost is 0), but that's probably because they are haunted, so all the bots are afraid of them. That is why any room that is free or is located anywhere below a free room in the same column is not considered suitable for the bots to live in.
@@ -69,51 +71,46 @@ function matrixElementsSum(matrix) {
   }
 
 **********************************************************************************************************************/
-
-
-
-matrix = [
-    [0, 1, 1, 2],
-    [0, 5, 0, 0],
-    [2, 0, 3, 3]
-];
+matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]];
 
 function matrixElementsSum(matrix) {
-    // Calculate the width and height of the Array
-    var w = matrix.length || 0;
-    var h = matrix[0] instanceof Array ? matrix[0].length : 0;
-    // In case it is a zero matrix return empty array.
-    if (h === 0 || w === 0) {
-        return [];
+  // Calculate the width and height of the Array
+  var w = matrix.length || 0;
+  var h = matrix[0] instanceof Array ? matrix[0].length : 0; // In case it is a zero matrix return empty array.
+
+  if (h === 0 || w === 0) {
+    return [];
+  }
+
+  var i,
+      j,
+      t = []; // Loop through every item in the outer array (height)
+
+  for (i = 0; i < h; i++) {
+    // Insert a new row (array)
+    t[i] = []; // Loop through every item per item in outer array (width)
+
+    for (j = 0; j < w; j++) {
+      // Save transposed martix.
+      t[i][j] = matrix[j][i];
     }
+  } // now that we have our floors as columns if we come across a 0 the rest of the rooms are will be zero and thus dont need to be there
 
-    var i,
-        j,
-        t = [];
-    // Loop through every item in the outer array (height)
-    for (i = 0; i < h; i++) {
-        // Insert a new row (array)
-        t[i] = [];
-        // Loop through every item per item in outer array (width)
-        for (j = 0; j < w; j++) {
-            // Save transposed martix.
-            t[i][j] = matrix[j][i];
-        }
+
+  for (var i = 0; i < t.length; i++) {
+    var index = t[i].indexOf(0);
+
+    if (index != -1) {
+      t[i].length = index;
     }
+  } //concat multi array to single array
 
-    // now that we have our floors as columns if we come across a 0 the rest of the rooms are will be zero and thus dont need to be there
-    for (var i = 0; i < t.length; i++) {
-        var index = t[i].indexOf(0);
-        if (index != -1) {
-            t[i].length = index;
-        }
-    }
 
-    //concat multi array to single array
-    var merged = [].concat.apply([], t);
+  var merged = [].concat.apply([], t); // get sum of flattened array
 
-    // get sum of flattened array
-    return merged.reduce((acc, val) => acc + val, 0);
+  return merged.reduce(function (acc, val) {
+    return acc + val;
+  }, 0);
 }
 
 matrixElementsSum(matrix);
