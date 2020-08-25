@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - Exclusive "or" (xor) Logical Operator
@@ -23,13 +25,9 @@ should have the behaviour described above, returning true if exactly one
 of the two expressions evaluate to true, false otherwise.
 
 */
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function xor(a, b) {
-    return a != b;
+  return a != b;
 }
