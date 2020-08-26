@@ -1,15 +1,11 @@
-// 8kyu - Grasshopper - Function Syntax Debugging 
+"use strict";
 
+// 8kyu - Grasshopper - Function Syntax Debugging 
 // Grasshopper - Function syntax debugging
 // A student was working on a function and made some syntax mistakes while coding. Help them find their mistakes and fix them.
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-let main = (verb, noun) => verb + noun;
+var main = function main(verb, noun) {
+  return verb + noun;
+};
