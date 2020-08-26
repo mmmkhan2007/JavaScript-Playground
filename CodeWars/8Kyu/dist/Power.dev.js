@@ -15,7 +15,6 @@ numberToPower(2,3)  // -> 8 ( = 2 * 2 * 2 )
 numberToPower(10,6) // -> 1000000
 Note: Math.pow and some others Math functions are disabled on final tests.
 
-
 */
 //#############################################################
 //#                        MY SOLUTIONS                       #

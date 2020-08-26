@@ -1,15 +1,14 @@
-// 8kyu - Grasshopper - Personalized
+/*
+8kyu - Grasshopper - Personalized
 
-// Personalized greeting
+Personalized greeting
 
-// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+Use conditionals to return the proper message:
 
-// Use conditionals to return the proper message:
+======= case | return --- | --- name equals owner | 'Hello boss' otherwise | 'Hello guest'
 
-// ======= case | return --- | --- name equals owner | 'Hello boss' otherwise | 'Hello guest'
-
-
-
+*/
 
 //#############################################################
 //#                        MY SOLUTIONS                       #

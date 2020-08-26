@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - Get Ascii Value of Character
@@ -9,14 +11,9 @@ write a function getASCII which inputs a character and returns the corresponding
 for ASCII table, you can refer to http://www.asciitable.com/
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
-let getASCII = c => c.charCodeAt(0);
+var getASCII = function getASCII(c) {
+  return c.charCodeAt(0);
+};

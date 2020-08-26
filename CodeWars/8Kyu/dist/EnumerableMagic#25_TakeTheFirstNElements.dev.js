@@ -14,3 +14,4 @@ returns a list/array array of the first n elements from the list/array.
 var take = function take(arr, n) {
   return arr.slice(0, n);
 };
+/*   */
