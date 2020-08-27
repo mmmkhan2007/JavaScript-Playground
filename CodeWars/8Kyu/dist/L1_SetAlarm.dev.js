@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 8kyu - L1: Set Alarm
@@ -10,12 +12,9 @@ setAlarm(false, true) -> false
 setAlarm(true, false) -> true 
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-let setAlarm = (employed, vacation) => employed && !vacation;
+var setAlarm = function setAlarm(employed, vacation) {
+  return employed && !vacation;
+};
