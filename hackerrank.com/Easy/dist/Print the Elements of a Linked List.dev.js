@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 If you're new to linked lists, this is a great exercise for learning about them. Given a pointer to the head node of a linked list, print its elements in order, one element per line. If the head pointer is null (indicating the list is empty), don’t print anything.
 
@@ -28,17 +30,12 @@ Explanation
 
 There are two elements in the linked list. They are represented as 16 -> 13 -> NULL. So, the printLinkedList function should print 16 and 13 each in a new line.
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function printLinkedList(head) {
-    while (head) {
-        console.log(head.data)
-        head = head.next
-    }
+  while (head) {
+    console.log(head.data);
+    head = head.next;
+  }
 }

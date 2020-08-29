@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 The Fibonacci Sequence
 
@@ -43,17 +45,16 @@ The Fibonacci sequence begins as follows:
 
 We want to know the value of . In the sequence above,  evaluates to .
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function fibonacci(n) {
-    if (n == 0 || n == 1) return n;
-    let arr = [1, 1];
-    for (let i = 1; i < n; i++) { arr.push(arr[i - 1] + arr[i]) }
-    return arr[arr.length - 2]
+  if (n == 0 || n == 1) return n;
+  var arr = [1, 1];
+
+  for (var i = 1; i < n; i++) {
+    arr.push(arr[i - 1] + arr[i]);
+  }
+
+  return arr[arr.length - 2];
 }

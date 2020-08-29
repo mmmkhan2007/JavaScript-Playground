@@ -39,6 +39,16 @@ No
 Explanation 2
 Harold's magazine is missing the word .
 */
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 function checkMagazine(magazine, note) {
     for (let i = 0; i < note.length; i++) {
         if (!magazine.includes(note[i])) { return console.log('No') } else {

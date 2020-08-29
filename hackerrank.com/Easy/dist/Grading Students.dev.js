@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 HackerLand University has the following grading policy:
@@ -37,28 +39,25 @@ Student  received a , and the next multiple of  from  is . Since , the student's
 Student  received a grade below , so the grade will not be modified and the student's final grade is .
 
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function gradingStudents(grades) {
-    return grades.map(v => {
-        if (v < 38) return v
-        let i = 2;
-        let z = v
-        while (i !== 0) {
-            i--
-            v--
-            if (v % 5 === 0) return z
-        }
-        while (v % 5 !== 0) {
-            v++
-        }
-        return v
-    })
+  return grades.map(function (v) {
+    if (v < 38) return v;
+    var i = 2;
+    var z = v;
+
+    while (i !== 0) {
+      i--;
+      v--;
+      if (v % 5 === 0) return z;
+    }
+
+    while (v % 5 !== 0) {
+      v++;
+    }
+
+    return v;
+  });
 }

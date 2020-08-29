@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Create a list, , of  empty sequences, where each sequence is indexed from  to . The elements within each of the  sequences also use -indexing.
 Create an integer, , and initialize it to .
@@ -73,35 +75,30 @@ Query 4: Assign the value at index  of sequence  to , print .
 
 3
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function dynamicArray(n, queries) {
-    const seq = {};
-    const lastAnswerArray = [];
-    let lastAnswer = 0
-    let seqSize = 0
+  var seq = {};
+  var lastAnswerArray = [];
+  var lastAnswer = 0;
+  var seqSize = 0;
 
-    for (let i = 0; i < queries.length; i++) {
-        let place = ((queries[i][1] ^ lastAnswer) % n)
-        if (queries[i][0] === 1) {
-            if (seq[place] === undefined) {
-                seq[place] = [queries[i][2]]
-            } else {
-                seq[place].push(queries[i][2])
-            }
-        } else {
-            let length = (seq[place].length)
-            lastAnswer = seq[place][(queries[i][2] % length)]
-            lastAnswerArray.push(lastAnswer)
-        }
+  for (var i = 0; i < queries.length; i++) {
+    var place = (queries[i][1] ^ lastAnswer) % n;
+
+    if (queries[i][0] === 1) {
+      if (seq[place] === undefined) {
+        seq[place] = [queries[i][2]];
+      } else {
+        seq[place].push(queries[i][2]);
+      }
+    } else {
+      var length = seq[place].length;
+      lastAnswer = seq[place][queries[i][2] % length];
+      lastAnswerArray.push(lastAnswer);
     }
-    return lastAnswerArray
+  }
 
+  return lastAnswerArray;
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 You are choreographing a circus show with various animals. For one act, you are given two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity).
 The first kangaroo starts at location  and moves at a rate of  meters per jump.
@@ -30,15 +32,10 @@ NO
 Explanation 1
 The second kangaroo has a starting location that is ahead (further to the right) of the first kangaroo's starting location (i.e., ). Because the second kangaroo moves at a faster rate (meaning ) and is already ahead of the first kangaroo, the first kangaroo will never be able to catch up. Thus, we print NO.
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function kangaroo(kanga1, rate1, kanga2, rate2) {
-    let x = (kanga1 - kanga2) / (rate2 - rate1);
-    return Number.isInteger(x) && x > 0 ? "YES" : 'NO'
+  var x = (kanga1 - kanga2) / (rate2 - rate1);
+  return Number.isInteger(x) && x > 0 ? "YES" : 'NO';
 }

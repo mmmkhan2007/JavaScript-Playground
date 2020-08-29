@@ -1,3 +1,17 @@
+"use strict";
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n"], ["\\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 /*
 Consider a staircase of size :
 
@@ -45,20 +59,15 @@ Explanation
 
 The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function staircase(n) {
-    let arr = []
-    for (let i = 1; i <= n; i++) {
-        arr.push(' '.repeat(n - i) + '#'.repeat(i))
-    }
-    console.log(arr.join `\n`)
+  var arr = [];
+
+  for (var i = 1; i <= n; i++) {
+    arr.push(' '.repeat(n - i) + '#'.repeat(i));
+  }
+
+  console.log(arr.join(_templateObject()));
 }

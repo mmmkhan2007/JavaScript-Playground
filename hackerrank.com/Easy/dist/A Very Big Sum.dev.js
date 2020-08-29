@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
 
@@ -32,14 +34,11 @@ Note:
 The range of the 32-bit integer is .
 When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function aVeryBigSum(ar) {
-    return ar.reduce((a, b) => a + b, 0)
+  return ar.reduce(function (a, b) {
+    return a + b;
+  }, 0);
 }

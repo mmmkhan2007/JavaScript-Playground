@@ -31,19 +31,27 @@ Sample Output
 
 3
 */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 function sockMerchant(n, ar) {
     let answer = 0;
-    for (let i = 0; i < ar.length; i++){
-        for (let j = i + 1; j < ar.length; j++){
+    for (let i = 0; i < ar.length; i++) {
+        for (let j = i + 1; j < ar.length; j++) {
             if (ar[i] === ar[j] && ar[i] !== '' && ar[j] !== '') {
                 answer++;
                 ar[i] = ''
-                ar[j]=''
+                ar[j] = ''
             }
         }
-        
+
     }
-    
+
 
     return answer;
 

@@ -40,6 +40,7 @@ Sample Output 1
 //#                        MY SOLUTIONS                       #
 //#############################################################
 
+
 function reverseArray(a) {
     return a.reverse()
 }

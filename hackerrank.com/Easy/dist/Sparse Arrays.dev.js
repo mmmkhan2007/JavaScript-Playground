@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 There is a collection of input strings and a collection of query strings. For each query string, determine how many times it occurs in the list of input strings.
 
@@ -156,16 +158,13 @@ Sample Output 3
 3
 2
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function matchingStrings(strings, queries) {
-    return queries.map(v => strings.filter(x => v === x).length)
+  return queries.map(function (v) {
+    return strings.filter(function (x) {
+      return v === x;
+    }).length;
+  });
 }

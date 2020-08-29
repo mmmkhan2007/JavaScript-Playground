@@ -1,8 +1,5 @@
 /*
 
-
-
-
 A Long Long Time
 Create a function that takes three values:
 
@@ -25,6 +22,9 @@ No two durations will be the same.
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 /*  Solution 1   */

@@ -1,3 +1,57 @@
+"use strict";
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 /*
 Given a square grid of characters in the range ascii[a-z], rearrange elements of each row alphabetically, ascending. Determine if the columns are also in ascending alphabetical order, top to bottom. Return YES if they are or NO if they are not.
 For example, given:
@@ -37,26 +91,27 @@ pqrst
 uvwxy
 This fulfills the condition since the rows 1, 2, ..., 5 and the columns 1, 2, ..., 5 are all lexicographically sorted.
 */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function gridChallenge(grid) {
-    const sorted = grid.map(v => v.split ``.sort().join ``)
-    const arr = []
-    const temp = []
-    for (let i = 0; i < sorted.length; i++) {
-        const temp = []
-        for (let j = 0; j < sorted.length; j++) {
-            temp.push(sorted[j][i])
-        }
-        arr.push(temp.join ``)
+  var sorted = grid.map(function (v) {
+    return v.split(_templateObject2()).sort().join(_templateObject());
+  });
+  var arr = [];
+  var temp = [];
+
+  for (var i = 0; i < sorted.length; i++) {
+    var _temp = [];
+
+    for (var j = 0; j < sorted.length; j++) {
+      _temp.push(sorted[j][i]);
     }
-    return arr.every(v => v === v.split ``.sort().join ``) ? 'YES' : 'NO'
+
+    arr.push(_temp.join(_templateObject3()));
+  }
+
+  return arr.every(function (v) {
+    return v === v.split(_templateObject5()).sort().join(_templateObject4());
+  }) ? 'YES' : 'NO';
 }

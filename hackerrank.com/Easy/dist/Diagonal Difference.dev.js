@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
@@ -55,26 +57,22 @@ Difference: |4 - 19| = 15
 Note: |x| is the absolute value of x
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
-
 function diagonalDifference(arr) {
-    let left = 0
-    let right = 0
-    let j = 0,
-        k = arr.length - 1
-    for (let i = 0; i < arr.length;) {
-        left += arr[i][j]
-        right += arr[i][k]
-        i++
-        j++
-        k--
-    }
-    return Math.abs(left - right)
+  var left = 0;
+  var right = 0;
+  var j = 0,
+      k = arr.length - 1;
+
+  for (var i = 0; i < arr.length;) {
+    left += arr[i][j];
+    right += arr[i][k];
+    i++;
+    j++;
+    k--;
+  }
+
+  return Math.abs(left - right);
 }
