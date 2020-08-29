@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 Numbers to Arrays and Vice Versa
@@ -20,12 +16,12 @@ toNumber([0]) ➞ 0
 Notes
 All test cases will be weakly positive numbers: >= 0
 
-
-
 */
 
 
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -41,11 +37,11 @@ const toNumber = arr => Number(arr.join(''));
 
 
 function toArray(num) {
-	return num.toString().split("").map(x=>x=Number(x));
+    return num.toString().split("").map(x => x = Number(x));
 }
 
 function toNumber(arr) {
-	return Number(arr.join(""));
+    return Number(arr.join(""));
 }
 
 
@@ -54,23 +50,23 @@ function toNumber(arr) {
 
 
 function toArray(num) {
-	return num.toString().split("").map(x => parseInt(x));
+    return num.toString().split("").map(x => parseInt(x));
 }
 
 function toNumber(arr) {
-	return parseInt(arr.join(""));
+    return parseInt(arr.join(""));
 }
 
 
 
 
 
-let toArray = function(num){
+let toArray = function(num) {
     let a = [];
-    while(true){
-        a.push(num%10);
-        num = Math.floor(num/10);
-        if(num == 0){
+    while (true) {
+        a.push(num % 10);
+        num = Math.floor(num / 10);
+        if (num == 0) {
             break;
         }
     }
@@ -88,11 +84,11 @@ function toNumber(arr) {
 
 
 function toArray(num) {
-	return [...num + ""].map(n => parseInt(n));
+    return [...num + ""].map(n => parseInt(n));
 }
 
 function toNumber(arr) {
-	return parseInt(arr.reduce((acc, curr) => acc + (curr + "")));
+    return parseInt(arr.reduce((acc, curr) => acc + (curr + "")));
 }
 
 
@@ -101,8 +97,8 @@ function toNumber(arr) {
 const toArray = num => [...String(num)].map(x => (x = parseInt(x)));
 
 const toNumber = arr =>
-  parseInt(
-    String(arr)
-      .split(',')
-      .join('')
-  );
+    parseInt(
+        String(arr)
+        .split(',')
+        .join('')
+    );

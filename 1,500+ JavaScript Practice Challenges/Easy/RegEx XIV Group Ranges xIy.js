@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 RegEx XIV: Group Ranges x|y
@@ -24,13 +20,12 @@ Examples
 Notes
 Check the Resources tab if you get stuck.
 
-
-
 */
 
 
-
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 /*  Solution 1   */
@@ -42,13 +37,3 @@ const REGEXP = /(?:red|blue) flag/g
 const REGEXP = /(red|blue) flag/g;
 
 const REGEXP = /red\sflag|blue\sflag/g
-
-
-
-/*  Solution 2   */
-
-
-
-
-
-/*  Solution 3   */

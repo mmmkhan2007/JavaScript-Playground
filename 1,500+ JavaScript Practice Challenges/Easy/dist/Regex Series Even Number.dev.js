@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Regex Series: Even Number?
@@ -15,16 +17,9 @@ Notes
 This challenge is designed to use Regex only.
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
 
-
-
 /*  Solution 1   */
-
-
-let x = /^\d*[02468]$/
+var x = /^\d*[02468]$/;

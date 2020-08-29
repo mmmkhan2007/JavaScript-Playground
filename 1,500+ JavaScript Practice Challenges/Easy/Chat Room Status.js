@@ -1,10 +1,4 @@
-
-
-
-
 /*
-
-
 Chat Room Status
 Write a function that returns the number of users in a chatroom based on the following rules:
 
@@ -26,32 +20,34 @@ chatroomStatus(["pap_ier44", "townieBOY", "panda321", "motor_bike5", "sandwichma
 ➞ "pap_ier44, townieBOY and 4 more online"
 Notes
 
-
 */
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
 /*  Solution 1   */
 
 function chatroomStatus(users) {
-	switch(users.length){
-		case 0:
-			return "no one online";
-			break;
-		case 1:
-			return users[0] + " online";
-			break;
-		case 2:
-			return users[0] + " and " + users[1] + " online";
-			break;
-		default:
-			return users[0] + ", " + users[1] + " and "+ (users.length - 2) + " more online";
-			break;
-	}
-	
+    switch (users.length) {
+        case 0:
+            return "no one online";
+            break;
+        case 1:
+            return users[0] + " online";
+            break;
+        case 2:
+            return users[0] + " and " + users[1] + " online";
+            break;
+        default:
+            return users[0] + ", " + users[1] + " and " + (users.length - 2) + " more online";
+            break;
+    }
+
 }
 
 
@@ -60,21 +56,21 @@ function chatroomStatus(users) {
 
 
 function chatroomStatus(users) {
-	switch (users.length) {
-		case 0:
-			return "no one online";
-			break;
-		case 1:
-			return users[0] + " online";
-			break;
-		case 2:
-			return users[0] + ' and ' + users[1] + " online";
-			break;
-		default:
-			return users[0] + ', ' + users[1] + ' and ' + (users.length-2) + " more online";
-			break;
-	}
-	
+    switch (users.length) {
+        case 0:
+            return "no one online";
+            break;
+        case 1:
+            return users[0] + " online";
+            break;
+        case 2:
+            return users[0] + ' and ' + users[1] + " online";
+            break;
+        default:
+            return users[0] + ', ' + users[1] + ' and ' + (users.length - 2) + " more online";
+            break;
+    }
+
 }
 
 
@@ -82,20 +78,20 @@ function chatroomStatus(users) {
 
 
 function chatroomStatus(users) {
-	const userN = users.length;
-	switch (true) {
-		case (userN === 0):
-			message = "no one online";
-			break;
-		case (userN === 1):
-			message = users[0] + " online";
-			break;
-		case (userN === 2):
-			message = users[0] +  " and " + users[1] + " online";
-			break;
-		case (userN >= 3):
-			message = users[0] +  ", " + users[1] + " and " + (userN-2) + " more online";
-			break;
-	}
-	return message
+    const userN = users.length;
+    switch (true) {
+        case (userN === 0):
+            message = "no one online";
+            break;
+        case (userN === 1):
+            message = users[0] + " online";
+            break;
+        case (userN === 2):
+            message = users[0] + " and " + users[1] + " online";
+            break;
+        case (userN >= 3):
+            message = users[0] + ", " + users[1] + " and " + (userN - 2) + " more online";
+            break;
+    }
+    return message
 }

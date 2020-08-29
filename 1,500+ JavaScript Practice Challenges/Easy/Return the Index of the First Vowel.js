@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 Return the Index of the First Vowel
@@ -21,12 +17,13 @@ Characters in words will be upper or lower case.
 "y" is not considered a vowel.
 Input always contains a vowel.
 
-
-
 */
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -46,14 +43,14 @@ const firstVowel = (str) => str.toLowerCase().search('[aeiou]');
 
 
 function firstVowel(str) {
-	found=-1;
-  for (i=0;i<str.length;i++) {
-		if (str[i].match(/[AEIOUaeiou]/g,str[i])) {
-			found=i;
-			break;
-		}
-	}
-	return found;
+    found = -1;
+    for (i = 0; i < str.length; i++) {
+        if (str[i].match(/[AEIOUaeiou]/g, str[i])) {
+            found = i;
+            break;
+        }
+    }
+    return found;
 }
 
 
@@ -63,9 +60,9 @@ function firstVowel(str) {
 
 
 function firstVowel(str) {
-	for (let i = 0; i < str.length; i += 1) {
-		if ('AEIOUaeiou'.indexOf(str[i]) >= 0) {
-			return i;
-		}
-	}
+    for (let i = 0; i < str.length; i += 1) {
+        if ('AEIOUaeiou'.indexOf(str[i]) >= 0) {
+            return i;
+        }
+    }
 }

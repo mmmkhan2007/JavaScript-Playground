@@ -1,7 +1,5 @@
 /*
 
-
-
 Calculate the Mean
 Create a function that takes an array of numbers and returns the mean value.
 

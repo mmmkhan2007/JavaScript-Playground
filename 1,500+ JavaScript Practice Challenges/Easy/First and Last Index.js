@@ -1,9 +1,4 @@
-
-
-
-
 /*
-
 
 First and Last Index
 Given a word, write a function that returns the first index and the last index of a character.
@@ -25,18 +20,19 @@ If the character does not exist in the word, return undefined.
 If only one instance of the character exists, the first and last index will be the same.
 Check the Resources tab for hints.
 
-
 */
 
 
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
 /*  Solution 1   */
 
 
-charIndex = (w, c) => w.includes(c) ? [w.indexOf(c),w.lastIndexOf(c)] : undefined;
+charIndex = (w, c) => w.includes(c) ? [w.indexOf(c), w.lastIndexOf(c)] : undefined;
 
 const charIndex = (word, ch) => word.includes(ch) ? [word.indexOf(ch), word.lastIndexOf(ch)] : undefined;
 
@@ -47,16 +43,16 @@ const charIndex = (word, ch) => word.includes(ch) ? [word.indexOf(ch), word.last
 /*  Solution 2   */
 
 function charIndex(word, char) {
-	const splitWord = word.split('');
-	
-	if ( word.includes(char) ) {
-		return [
-			splitWord.findIndex(x => x === char),
-			splitWord.lastIndexOf(char)
-		];
-	}
-	
-	return;
+    const splitWord = word.split('');
+
+    if (word.includes(char)) {
+        return [
+            splitWord.findIndex(x => x === char),
+            splitWord.lastIndexOf(char)
+        ];
+    }
+
+    return;
 }
 
 
@@ -79,5 +75,5 @@ function charIndex(word, char) {
 
 
 const charIndex = (word, char) => {
-    return word.indexOf(char) === -1? undefined: [word.indexOf(char), word.lastIndexOf(char)];
-    }
+    return word.indexOf(char) === -1 ? undefined : [word.indexOf(char), word.lastIndexOf(char)];
+}

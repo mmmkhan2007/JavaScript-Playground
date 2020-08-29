@@ -1,10 +1,4 @@
-
-
-
-
 /*
-
-
 Convert a Number to Base 2
 Create a function that returns a base 2 (binary) representation of a base 10 (decimal) string number. To convert is simple: ((2) means base 2 and (10) means base 10) 010101001(2) = 1 + 8 + 32 + 128.
 
@@ -29,6 +23,9 @@ If a binary conversion for 0 is attempted, return "0".
 */
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -37,7 +34,7 @@ If a binary conversion for 0 is attempted, return "0".
 
 
 function binary(decimal) {
-	return decimal.toString(2);
+    return decimal.toString(2);
 }
 
 
@@ -54,5 +51,5 @@ const binary = n => n.toString(2);
 /*  Solution 3   */
 
 function binary(decimal) {
-	return decimal.toString(2);
+    return decimal.toString(2);
 }

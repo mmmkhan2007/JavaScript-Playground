@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 RegEx: Special Characters
@@ -17,20 +13,18 @@ asterisk("abbbccount") ➞ true
 asterisk("bbbccount") ➞ false
 Notes
 
-
-
 */
 
 
-
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 /*  Solution 1   */
 
-
 function asterisk(string) {
-	return string.indexOf('a') !== -1 && string.indexOf("c") !== -1;
+    return string.indexOf('a') !== -1 && string.indexOf("c") !== -1;
 }
 
 
@@ -41,22 +35,17 @@ const asterisk = str => (/ab*c/).test(str)
 
 const asterisk = string => /ab*c/g.test(string);
 
-
 const asterisk = str => /ab*c/.test(str);
 
 const asterisk = string => /.*a+b*c+.*/.test(string)
 
 
-
-
 /*  Solution 3   */
 
-
 function asterisk(string) {
-	const check = RegExp('a');
-	
-	if (/a/.test(string) && /c/.test(string)){
-		return true
-	}
-	else return false
+    const check = RegExp('a');
+
+    if (/a/.test(string) && /c/.test(string)) {
+        return true
+    } else return false
 }

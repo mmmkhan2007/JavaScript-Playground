@@ -13,27 +13,13 @@ Notes
 Use a RegEx boundary assertion in your function.
 
 */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
 
-
-
-
-
 /*  Solution 1   */
-
-
-
-
 
 /*  Solution 2   */
 
-
-
-
-
 /*  Solution 3   */
+"use strict";

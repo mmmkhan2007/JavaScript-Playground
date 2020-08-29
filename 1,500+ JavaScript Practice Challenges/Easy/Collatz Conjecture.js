@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 Collatz Conjecture
@@ -26,11 +22,12 @@ collatz(8) ➞ [4, 8]
 Notes
 (Improbable) Bonus: Find a positive starting number that doesn't reach 1, and score a place in Math history plus a cash prize.
 
-
-
 */
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -39,13 +36,13 @@ Notes
 
 
 function collatz(n) {
-	let [len, max] = [1, n];
-	while (n > 1) {
-		n = n % 2 ? n * 3 + 1 : n / 2;
-		len++;
-		if (n > max) max = n;
-	}
-	return [len, max];
+    let [len, max] = [1, n];
+    while (n > 1) {
+        n = n % 2 ? n * 3 + 1 : n / 2;
+        len++;
+        if (n > max) max = n;
+    }
+    return [len, max];
 }
 
 
@@ -63,11 +60,10 @@ const collatz = (n, c = 1, m = n, x = n % 2 ? 3 * n + 1 : n / 2) => n === 1 ? [c
 
 
 const collatz = n => {
-	const arr = [];
-	arr.push(n);
-	while(arr[arr.length - 1] !== 1) {
-		if(arr[arr.length - 1] % 2 === 0) { arr.push(arr[arr.length - 1] / 2)}
-		else { arr.push(arr[arr.length - 1] * 3 + 1)}
-	}
-	return [arr.length, Math.max(...arr)]
+    const arr = [];
+    arr.push(n);
+    while (arr[arr.length - 1] !== 1) {
+        if (arr[arr.length - 1] % 2 === 0) { arr.push(arr[arr.length - 1] / 2) } else { arr.push(arr[arr.length - 1] * 3 + 1) }
+    }
+    return [arr.length, Math.max(...arr)]
 }

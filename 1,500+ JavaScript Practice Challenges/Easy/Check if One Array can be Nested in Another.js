@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 
@@ -29,12 +25,14 @@ Note the strict inequality (see example #3).
 
 
 
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 /*  Solution 1   */
 
 function canNest(arr1, arr2) {
-	return Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2);
+    return Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2);
 }
 
 /*
@@ -55,7 +53,7 @@ const canNest = (arr1, arr2) => Math.min(...arr1) > Math.min(...arr2) && Math.ma
 
 
 function canNest(arr1, arr2) {
-	return arr1.every(num => num < Math.max(...arr2) && num > Math.min(...arr2))
+    return arr1.every(num => num < Math.max(...arr2) && num > Math.min(...arr2))
 }
 
 
@@ -67,8 +65,8 @@ function canNest(arr1, arr2) {
 
 
 function canNest(arr1, arr2) {
-	const x = arr1.sort((a,b) => a - b)
-	const y = arr2.sort((a,b) => a - b)
-	if (x[0] > y[0] && x[x.length-1] < y[y.length - 1]) return true
-	else return false
+    const x = arr1.sort((a, b) => a - b)
+    const y = arr2.sort((a, b) => a - b)
+    if (x[0] > y[0] && x[x.length - 1] < y[y.length - 1]) return true
+    else return false
 }

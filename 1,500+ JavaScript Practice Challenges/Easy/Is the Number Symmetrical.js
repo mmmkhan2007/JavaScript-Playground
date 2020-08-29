@@ -1,9 +1,4 @@
-
-
-
-
 /*
-
 
 Is the Number Symmetrical?
 Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not. A number is symmetrical when it is the same as its reverse.
@@ -20,11 +15,12 @@ isSymmetrical(9939) ➞ false
 isSymmetrical(1112111) ➞ true
 Notes
 
-
 */
 
 
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -32,8 +28,8 @@ Notes
 
 
 const isSymmetrical = num => {
-	const str = String(num);
-	return str.split('').reverse().join('') === str;
+    const str = String(num);
+    return str.split('').reverse().join('') === str;
 }
 
 
@@ -44,11 +40,11 @@ const isSymmetrical = num => {
 
 /*  Solution 2   */
 
-isSymmetrical=n=>(""+n).split("").reverse().join("")==n;
+isSymmetrical = n => ("" + n).split("").reverse().join("") == n;
 
-const isSymmetrical = num =>  num == num.toString().split('').reverse().join('');
+const isSymmetrical = num => num == num.toString().split('').reverse().join('');
 
-const isSymmetrical = num =>  num.toString() === num.toString().split('').reverse().join('');
+const isSymmetrical = num => num.toString() === num.toString().split('').reverse().join('');
 
 const isSymmetrical = num => num.toString().split('').reverse().join('') === num.toString() ? true : false
 
@@ -64,17 +60,17 @@ const isSymmetrical = num => num.toString().split('').reverse().join('') === num
 
 
 function isSymmetrical(num) {
-	
-	let ans = '';
-	let arr = num.toString().split('');
-	let rra = arr.slice().reverse();
-	
-	
-	
-	for(let i=0; i< arr.length; i++){
-			arr[i] === rra[i] ? ans = true : ans = false;
-	}
-return ans;
+
+    let ans = '';
+    let arr = num.toString().split('');
+    let rra = arr.slice().reverse();
+
+
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] === rra[i] ? ans = true : ans = false;
+    }
+    return ans;
 
 }
 
@@ -83,13 +79,12 @@ return ans;
 
 function isSymmetrical(num) {
     let reversed = num.toString().split('').reverse().join('');
-    if(num < 0)  {
+    if (num < 0) {
         reversed = parseInt(reversed) * -1;
-    }
-    else {
+    } else {
         reversed = parseInt(reversed);
     }
 
-    if(reversed === num) return true;
+    if (reversed === num) return true;
     return false;
 }

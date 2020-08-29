@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 Omnipresent Value
@@ -23,11 +19,11 @@ isOmnipresent([[5], [5], [5], [6, 5]], 5) ➞ true
 isOmnipresent([[5], [5], [5], [6, 5]], 6) ➞ false
 Notes
 
-
-
 */
 
-
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -35,7 +31,7 @@ Notes
 /*  Solution 1   */
 
 function isOmnipresent(arr, val) {
-	return arr.every(x => x.includes(val));
+    return arr.every(x => x.includes(val));
 }
 
 
@@ -59,16 +55,16 @@ const isOmnipresent = (arr, val) => arr.map(items => items.indexOf(val) > -1).in
 /*  Solution 3   */
 
 function isOmnipresent(arr, val) {
-	return arr.every((e) => e.includes(val))
+    return arr.every((e) => e.includes(val))
 }
 
 
 function isOmnipresent(arr, val) {
-	return arr.every(arr => arr.includes(val))
+    return arr.every(arr => arr.includes(val))
 }
 
 
 
 function isOmnipresent(arr, val) {
-	return arr.every(x => x.includes(val));
+    return arr.every(x => x.includes(val));
 }

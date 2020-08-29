@@ -51,8 +51,6 @@ function inkLevels(inks) {
 }
 
 
-
-
 /*  Solution 2   */
 
 function inkLevels(inks) {
@@ -60,6 +58,7 @@ function inkLevels(inks) {
 }
 
 
+/*  Solution 3   */
 
 function inkLevels(inks) {
 
@@ -77,7 +76,7 @@ function inkLevels(inks) {
 
 
 
-/*  Solution 3   */
+/*  Solution 4  */
 
 
 function inkLevels(inks) {
