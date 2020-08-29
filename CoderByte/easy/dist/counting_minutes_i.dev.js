@@ -13,6 +13,9 @@
  * @param  {string} str
  * @return {number}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function countingMinutesI(str) {
   var times = str.split('-');
   times = times.map(function (currentValue, index, array) {

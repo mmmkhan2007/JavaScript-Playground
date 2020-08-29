@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function thirdGreatest(strArr) take the array of strings stored in
  * strArr and return the third largest word within in. So for example: if strArr
@@ -14,17 +16,14 @@
  * @param  {array} strArr
  * @return {string}
  */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
 function thirdGreatest(strArr) {
-    strArr.sort((a, b) => b.length - a.length);
-
-    return strArr[2];
+  strArr.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  return strArr[2];
 }
 
 module.exports = thirdGreatest;

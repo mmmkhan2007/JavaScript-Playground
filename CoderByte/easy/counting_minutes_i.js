@@ -11,6 +11,14 @@
  * @param  {string} str
  * @return {number}
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 function countingMinutesI(str) {
     let times = str.split('-');
 

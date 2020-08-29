@@ -12,6 +12,15 @@
  * @param  {array} arr
  * @return {string} true or false
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 function arrayAdditionI(arr) {
     // find largest number
     let largestIndex = 0;

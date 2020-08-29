@@ -10,6 +10,9 @@
  * @param  {string} str
  * @return {string}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function dashInsert(str) {
   var newString = str[0] || '';
 

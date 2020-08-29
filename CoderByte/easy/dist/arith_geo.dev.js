@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function arithGeo(arr) take the array of numbers stored in arr and
  * return the string "Arithmetic" if the sequence follows an arithmetic pattern
@@ -14,44 +16,39 @@
  * @param  {array} arr
  * @return {string} or -1 on failure
  */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function arithGeo(arr) {
-    if (arr.length === 1 || arr.length === 0) {
-        return -1;
-    }
-
-    let arithmetic = true;
-    // test arithmetic
-    for (let i = 2, diff = arr[1] - arr[0]; i < arr.length; i++) {
-        if (arr[i] - arr[i - 1] !== diff) {
-            arithmetic = false;
-        }
-    }
-
-    if (arithmetic) {
-        return 'Arithmetic';
-    }
-
-    let geometric = true;
-    // geometric
-    for (let i = 2, divisor = arr[1] / arr[0]; i < arr.length; i++) {
-        if (arr[i] / arr[i - 1] !== divisor) {
-            geometric = false;
-        }
-    }
-
-    if (geometric) {
-        return 'Geometric';
-    }
-
+  if (arr.length === 1 || arr.length === 0) {
     return -1;
+  }
+
+  var arithmetic = true; // test arithmetic
+
+  for (var i = 2, diff = arr[1] - arr[0]; i < arr.length; i++) {
+    if (arr[i] - arr[i - 1] !== diff) {
+      arithmetic = false;
+    }
+  }
+
+  if (arithmetic) {
+    return 'Arithmetic';
+  }
+
+  var geometric = true; // geometric
+
+  for (var _i = 2, divisor = arr[1] / arr[0]; _i < arr.length; _i++) {
+    if (arr[_i] / arr[_i - 1] !== divisor) {
+      geometric = false;
+    }
+  }
+
+  if (geometric) {
+    return 'Geometric';
+  }
+
+  return -1;
 }
 
 module.exports = arithGeo;

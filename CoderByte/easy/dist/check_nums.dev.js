@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function checkNums(num1,num2) take both parameters being passed and
  * return the string true if num2 is greater than num1, otherwise return the
@@ -7,23 +9,17 @@
  * @param  {number} num2
  * @return {string}
  */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function checkNums(num1, num2) {
-    if (num2 > num1) {
-        return 'true';
-    } else if (num1 === num2) {
-        return '-1';
-    } else {
-        return 'false';
-    }
+  if (num2 > num1) {
+    return 'true';
+  } else if (num1 === num2) {
+    return '-1';
+  } else {
+    return 'false';
+  }
 }
 
 module.exports = checkNums;

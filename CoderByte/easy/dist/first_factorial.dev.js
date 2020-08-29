@@ -8,6 +8,9 @@
  * @param  {number} num
  * @return {number}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function firstFactorial(num) {
   var factorial = 1;
 

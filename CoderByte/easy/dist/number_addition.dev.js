@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function numberAddition(str) take the str parameter, search for all
  * the numbers in the string, add them together, then return that final number.
@@ -11,39 +13,36 @@
  * @param  {string} str
  * @return {number}
  */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
 function numberAddition(str) {
-    const DIGITS = '0123456789';
+  var DIGITS = '0123456789';
+  var numbers = []; // First find numbers
 
-    let numbers = [];
+  for (var i = 0, number = ''; i < str.length; i++) {
+    if (!DIGITS.includes(str[i])) {
+      if (number !== '') {
+        numbers.push(number);
+      }
 
-    // First find numbers
-    for (let i = 0, number = ''; i < str.length; i++) {
-        if (!DIGITS.includes(str[i])) {
-            if (number !== '') {
-                numbers.push(number);
-            }
-            number = '';
-        } else {
-            number += str[i];
+      number = '';
+    } else {
+      number += str[i]; // Special case for last char
 
-            // Special case for last char
-            if (i === str.length - 1) {
-                numbers.push(number);
-            }
-        }
+      if (i === str.length - 1) {
+        numbers.push(number);
+      }
     }
+  }
 
-    let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        sum += parseInt(numbers[i]);
-    }
-    return sum;
+  var sum = 0;
+
+  for (var _i = 0; _i < numbers.length; _i++) {
+    sum += parseInt(numbers[_i]);
+  }
+
+  return sum;
 }
 
 module.exports = numberAddition;

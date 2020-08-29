@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function alphabetSoup(str) take the str string parameter being
  * passed and return the string with the letters in alphabetical order (ie.
@@ -6,17 +8,12 @@
  * @param  {string} str
  * @return {string}
  */
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function alphabetSoup(str) {
-    let letters = str.split('');
-    return letters.sort().join('');
+  var letters = str.split('');
+  return letters.sort().join('');
 }
 
 module.exports = alphabetSoup;

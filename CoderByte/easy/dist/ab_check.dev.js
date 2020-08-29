@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function abCheck(str) take the str parameter being passed and return
  * the string true if the characters a and b are separated by exactly 3 places
@@ -10,38 +12,32 @@
  * @param  {string} str
  * @return {string} 'true' or 'false'
  */
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function abCheck(str) {
-    let searchLetters = ['a', 'b'];
-    let letterSpace = 3;
+  var searchLetters = ['a', 'b'];
+  var letterSpace = 3;
 
-    if (str.length < letterSpace + 2) {
-        return 'false';
-    }
-
-    for (let i = 0; i < str.length - letterSpace - 1; i++) {
-        if (str[i] === searchLetters[0]) {
-            if (str[i + letterSpace + 1] === searchLetters[1]) {
-                return 'true';
-            }
-        }
-
-        if (str[i] === searchLetters[1]) {
-            if (str[i + letterSpace + 1] === searchLetters[0]) {
-                return 'true';
-            }
-        }
-    }
-
+  if (str.length < letterSpace + 2) {
     return 'false';
+  }
+
+  for (var i = 0; i < str.length - letterSpace - 1; i++) {
+    if (str[i] === searchLetters[0]) {
+      if (str[i + letterSpace + 1] === searchLetters[1]) {
+        return 'true';
+      }
+    }
+
+    if (str[i] === searchLetters[1]) {
+      if (str[i + letterSpace + 1] === searchLetters[0]) {
+        return 'true';
+      }
+    }
+  }
+
+  return 'false';
 }
 
 module.exports = abCheck;

@@ -6,6 +6,13 @@
  * @param  {string} str A string to be reversed
  * @return {string} Reversed str
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 function firstReverse(str) {
     let reversedString = str
         .split('')

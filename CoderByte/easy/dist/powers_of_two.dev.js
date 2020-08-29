@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Have the function powersOfTwo(num) take the num parameter being passed which
  * will be an integer and return the string true if it's a power of two. If it's
@@ -10,15 +12,11 @@
  * @param  {number} num
  * @return {string} 'true' or 'false'
  */
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
-
 function powersOfTwo(num) {
-    return Number.isInteger(Math.log(num) / Math.log(2)) ? 'true' : 'false';
+  return Number.isInteger(Math.log(num) / Math.log(2)) ? 'true' : 'false';
 }
 
 module.exports = powersOfTwo;

@@ -6,6 +6,13 @@
  * @param  {number} num
  * @return {number}
  */
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 function firstFactorial(num) {
     let factorial = 1;
     for (let i = 1; i <= num; i++) {
