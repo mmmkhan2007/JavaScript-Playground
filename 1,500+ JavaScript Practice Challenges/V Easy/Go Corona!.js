@@ -13,11 +13,6 @@ Daily recovered cases are always greater than'daily newCases.
 */
 
 
-
-
-
-
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
@@ -33,10 +28,20 @@ Solution 1
 
 
 
+const endCorona = (r, n, a) => Math.ceil(a / (r - n));
+
+const endCorona = (recovers, newCases, activeCases) =>
+    Math.ceil(activeCases / (recovers - newCases))
 
 
 
-
+function endCorona(recovers, newCases, activeCases) {
+    var out = 0;
+    for (i = activeCases; i > 0; i = i - (recovers - newCases)) {
+        out++;
+    }
+    return out;
+}
 
 
 /*  
@@ -45,16 +50,23 @@ Solution 2
 
 */
 
-
-
-
-
-
-
-
+function endCorona(recovers, newCases, activeCases) {
+    let days = 0
+    while (activeCases > 0) {
+        activeCases += newCases - recovers
+        days++
+    }
+    return days
+}
 
 /*  
 
 Solution 3
 
 */
+
+
+function endCorona(recovers, newCases, activeCases) {
+    let a = recovers - newCases;
+    let b = Math.ceil(activeCases / a);
+    return Math.round(b);
