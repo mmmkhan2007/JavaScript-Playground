@@ -1,7 +1,22 @@
-/**
- * @param {number} n
- * @return {number}
- */
+/*  
+204. Count Primes
+
+Count the number of prime numbers less than a non-negative number, n.
+
+Example:
+
+Input: 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var countPrimes = function(n) {
     var count = 0;
     for (var i = 1; i < n; i++) {
@@ -10,8 +25,10 @@ var countPrimes = function(n) {
     return count;
 };
 
+
 // traditional approach, to determine a number is prime or not,
 // only need to consider factors up to √n
+
 var isPrime = function(num) {
     if (num <= 1) return false;
     // Loop's ending condition is i * i <= num instead of i <= sqrt(num)
@@ -32,6 +49,7 @@ var isPrime = function(num) {
  * @param {number} n
  * @return {number}
  */
+
 var countPrimes = function(n) {
     var count = 0;
     var isPrime = [];

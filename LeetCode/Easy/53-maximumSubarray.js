@@ -2,6 +2,13 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var maxSubArray = function(nums) {
     var max = nums[0];
     var sums = [max];

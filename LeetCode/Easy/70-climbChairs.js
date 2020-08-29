@@ -2,6 +2,15 @@
  * @param {number} n
  * @return {number}
  */
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 // interative
 var climbStairs = function(n) {
     var result = 0;

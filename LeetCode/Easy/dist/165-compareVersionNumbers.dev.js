@@ -1,10 +1,8 @@
 "use strict";
 
-/**
- * @param {string} version1
- * @param {string} version2
- * @return {number}
- */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var compareVersion = function compareVersion(version1, version2) {
   var versionOne = version1.split('.');
   var versionTwo = version2.split('.');

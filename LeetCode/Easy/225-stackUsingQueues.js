@@ -10,6 +10,10 @@ var Stack = function() {
  * @param {number} x
  * @returns {void}
  */
+
+
+
+
 Stack.prototype.push = function(x) {
     this.stack.push(x);
 };

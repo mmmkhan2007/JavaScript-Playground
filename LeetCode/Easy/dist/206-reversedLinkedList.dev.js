@@ -1,17 +1,23 @@
 "use strict";
 
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
+ 206. Reverse Linked List
+ 
+Example:
 
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+
+Definition for singly-linked list.
+function ListNode(val) {
+     this.val = val;
+      this.next = null;
+ }
+
+*/
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 // Iterative way
 var _reverseList = function reverseList(head) {
   if (head === null || head.next === null) return head;

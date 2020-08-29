@@ -4,6 +4,9 @@
  * question: http://www.programcreek.com/2014/08/leetcode-shortest-word-distance-java/
  *
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 function shortestWordDist(words, word1, word2) {
   var index1, index2;
   return words.reduce(function (dist, word, index) {

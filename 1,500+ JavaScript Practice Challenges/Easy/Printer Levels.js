@@ -1,7 +1,3 @@
-
-
-
-
 /*
 
 Printer Levels
@@ -28,12 +24,13 @@ inkLevels({
 Notes
 A single printed page requires each color once, so printing is not possible if any of the slots lack ink (see example #3).
 
-
-
 */
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 
 
@@ -47,10 +44,10 @@ const inkLevels = inks => Math.min(...Object.values(inks));
 
 
 function inkLevels(inks) {
-	var arr = Object.values(inks);
-	var nums = arr.filter(x => Number.isFinite(x));
-	return Math.min(...nums);
-	
+    var arr = Object.values(inks);
+    var nums = arr.filter(x => Number.isFinite(x));
+    return Math.min(...nums);
+
 }
 
 
@@ -59,18 +56,18 @@ function inkLevels(inks) {
 /*  Solution 2   */
 
 function inkLevels(inks) {
-	return Object.values(inks).sort((a, b) => a - b)[0];
+    return Object.values(inks).sort((a, b) => a - b)[0];
 }
 
 
 
 function inkLevels(inks) {
-    
+
     let min = inks[Object.keys(inks)[0]];
-    Object.keys(inks).forEach(s=>{
+    Object.keys(inks).forEach(s => {
 
         let val = inks[s];
-        if(val<min){
+        if (val < min) {
             min = val;
         }
 
@@ -84,10 +81,10 @@ function inkLevels(inks) {
 
 
 function inkLevels(inks) {
-	let maxPages = Infinity;
-	console.log(inks)
-	Object.keys(inks).map(key => {
-		if (inks[key] < maxPages) maxPages = inks[key]
-	})
-	return maxPages
+    let maxPages = Infinity;
+    console.log(inks)
+    Object.keys(inks).map(key => {
+        if (inks[key] < maxPages) maxPages = inks[key]
+    })
+    return maxPages
 }

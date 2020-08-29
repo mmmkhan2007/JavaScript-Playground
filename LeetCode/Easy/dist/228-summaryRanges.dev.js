@@ -1,9 +1,19 @@
 "use strict";
 
+/*
+
+
+
+
+ */
+
 /**
  * @param {number[]} nums
  * @return {string[]}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var summaryRanges = function summaryRanges(nums) {
   var ranges = [];
 

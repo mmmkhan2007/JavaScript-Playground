@@ -14,6 +14,10 @@
  * @param {number} val
  * @return {ListNode}
  */
+
+
+
+
 var removeElements = function(head, val) {
     if (!head) return null;
     while (head && head.val === val) head = head.next;

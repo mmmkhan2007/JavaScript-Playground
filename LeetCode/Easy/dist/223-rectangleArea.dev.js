@@ -1,6 +1,11 @@
 "use strict";
 
 /**
+ * 
+ * 
+ * 
+ * 
+ * 
  * Key: find the left most x, right most x, top most y, top most y,
  * that is the overlap rectangle.
  * @param {number} A
@@ -13,6 +18,9 @@
  * @param {number} H
  * @return {number}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var computeArea = function computeArea(A, B, C, D, E, F, G, H) {
   var areaA = (C - A) * (D - B);
   var areaB = (G - E) * (H - F);

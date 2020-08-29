@@ -15,6 +15,9 @@
  * @param {ListNode} headB
  * @return {ListNode}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var getIntersectionNode = function getIntersectionNode(headA, headB) {
   var lenA = getLength(headA);
   var lenB = getLength(headB);

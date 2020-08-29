@@ -25,4 +25,11 @@ Example 2:
 Input: 4
 Output: "1211"
 */
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 let countAndSay = (n, str = '1') => Array.from({ length: n - 1 }, (v, i) => str = str.replace(/(.)\1*/g, m => m.length + m[0])).reverse()[0] || str

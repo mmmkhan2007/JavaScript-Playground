@@ -1,7 +1,27 @@
+/*
+
+
+
+
+ */
+
+
+
+
 /**
  * @param {number[]} nums
  * @return {string[]}
  */
+
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var summaryRanges = function(nums) {
     var ranges = [];
     for (var i = 0; i < nums.length; i++) {

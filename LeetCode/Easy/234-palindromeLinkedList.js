@@ -22,6 +22,12 @@
 
 
 
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 var isPalindrome = function(head) {
     if (!head || !head.next) return true;
     var fastHead = head;

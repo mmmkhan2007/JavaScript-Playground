@@ -15,6 +15,14 @@
  * @param {number} n
  * @return {ListNode}
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var removeNthFromEnd = function(head, n) {
     var fHead = head,
         sHead = head;

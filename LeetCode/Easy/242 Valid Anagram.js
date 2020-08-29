@@ -15,6 +15,17 @@ You may assume the string contains only lowercase alphabets.
 Follow up:
 What if the inputs contain unicode characters? How would you adapt your solution to such case?
 */
+
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
+
 var isAnagram = function(original, test) {
     return test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
 };

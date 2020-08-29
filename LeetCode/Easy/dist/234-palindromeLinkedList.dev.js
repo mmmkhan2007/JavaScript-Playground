@@ -19,6 +19,9 @@
  * @return {boolean}
  * 
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 var isPalindrome = function isPalindrome(head) {
   if (!head || !head.next) return true;
   var fastHead = head;

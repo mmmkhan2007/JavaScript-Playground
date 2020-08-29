@@ -5,11 +5,20 @@
  *     this.left = this.right = null;
  * }
  */
+
 /**
  * very fast 111ms
  * @param {TreeNode} root
  * @return {number}
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var minDepth = function(root) {
     if (!root) return 0;
     if (!root.left) return minDepth(root.right) + 1;

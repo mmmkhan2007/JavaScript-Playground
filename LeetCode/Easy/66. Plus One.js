@@ -15,7 +15,16 @@ Example 2:
 Input: [4,3,2,1]
 Output: [4,3,2,2]
 Explanation: The array represents the integer 4321.
+
 */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var plusOne = function(digits) {
     var carry = 1;
     for (var i = digits.length - 1; i >= 0; i--) {

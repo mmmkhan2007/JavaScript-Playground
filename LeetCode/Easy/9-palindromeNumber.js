@@ -2,6 +2,14 @@
  * @param {number} x
  * @return {boolean}
  */
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var isPalindrome = function(x) {
     if (x < 0) return false;
     var revX = 0;

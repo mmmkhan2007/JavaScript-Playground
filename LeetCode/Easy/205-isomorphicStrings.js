@@ -13,6 +13,16 @@
  * @param {string} t
  * @return {boolean}
  */
+
+
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 var isIsomorphic = function(s, t) {
     var map = {};
     for (var i = 0; i < s.length; i++) {

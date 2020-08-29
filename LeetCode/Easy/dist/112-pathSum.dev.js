@@ -13,6 +13,9 @@
  * @param {number} sum
  * @return {boolean}
  */
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 // recursion
 var hasPathSum = function hasPathSum(root, sum) {
   if (!root) return false;
