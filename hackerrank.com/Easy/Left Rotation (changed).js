@@ -1,17 +1,3 @@
-"use strict";
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral([" "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 /*
 
 A left rotation operation on an array of size  shifts each of the array's elements  unit to the left. For example, if  left rotations are performed on array , then the array would become .
@@ -43,15 +29,24 @@ When we perform  left rotations, the array undergoes the following sequence of c
 Thus, we print the array's final state as a single line of space-separated values, which is 5 1 2 3 4.
 
 */
+
+
+
+
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
+
+
+
 function main() {
-  var nd = readLine().split(' ');
-  var n = parseInt(nd[0], 10);
-  var d = parseInt(nd[1], 10);
-  var a = readLine().split(' ').map(function (aTemp) {
-    return parseInt(aTemp, 10);
-  });
-  console.log(a.slice(d % a.length).concat(a.slice(0, d % a.length)).join(_templateObject()));
+    const nd = readLine().split(' ');
+
+    const n = parseInt(nd[0], 10);
+
+    const d = parseInt(nd[1], 10);
+
+    const a = readLine().split(' ').map(aTemp => parseInt(aTemp, 10));
+
+    console.log(a.slice(d % a.length).concat(a.slice(0, d % a.length)).join ` `)
 }
