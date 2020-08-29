@@ -1,3 +1,17 @@
+"use strict";
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n"], ["\\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 /*
 
 A bracket is considered to be any one of the following characters: (, ), {, }, [, or ].
@@ -40,15 +54,13 @@ The string {[(])} is not balanced because the brackets enclosed by the matched p
 The string {{[[(())]]}} meets both criteria for being a balanced string, so we print YES on a new line.
 
 */
-
-
-
 function isBalanced(s) {
-    s = s.split `\n`.map(v => {
-        while (/(\[\])|(\(\))|({})/.test(v)) {
-            v = v.replace(/(\[\])|(\(\))|({})/g, '')
-        }
-        return v.length ? 'NO' : 'YES'
-    })
-    return s
+  s = s.split(_templateObject()).map(function (v) {
+    while (/(\[\])|(\(\))|({})/.test(v)) {
+      v = v.replace(/(\[\])|(\(\))|({})/g, '');
+    }
+
+    return v.length ? 'NO' : 'YES';
+  });
+  return s;
 }
