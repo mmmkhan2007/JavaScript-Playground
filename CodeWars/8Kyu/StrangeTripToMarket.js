@@ -8,7 +8,6 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 
 */
 
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################

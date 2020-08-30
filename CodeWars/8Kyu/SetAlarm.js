@@ -8,4 +8,11 @@
 // setAlarm(false, true) -> false
 // setAlarm(true, false) -> true 
 
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 let setAlarm = (employed, vacation) => employed && !vacation;
