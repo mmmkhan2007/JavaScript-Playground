@@ -12,7 +12,7 @@ C is the number of multiples of 3 and 5 below the given integer
 Example:
 solution(20) should return [5, 2, 1]
 
-  */
+*/
 
 
 
