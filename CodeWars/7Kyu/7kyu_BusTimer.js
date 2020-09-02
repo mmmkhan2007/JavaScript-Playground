@@ -28,8 +28,6 @@ The input time might be after the buses have stopped running, i.e. after 00:00
 //#############################################################
 
 
-
-
 function busTimer(time) {
     let min = 6 * 60 - 5,
         max = 24 * 60 - 5;
