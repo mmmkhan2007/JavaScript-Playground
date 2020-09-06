@@ -92,3 +92,27 @@ const formatMath = s => {
     let arr = s.split(" ");
     return arr[1] == "x" ? `${s} = ${arr[0] * arr[2]}` : `${s} = ${eval(s)}`;
 };
+
+
+
+//#  SOLUTION 7
+
+const formatMath = expr => {
+    expr = expr.split(' ')
+    let result
+    switch (expr[1]) {
+        case 'x':
+            result = expr[0] * expr[2]
+            break
+        case '/':
+            result = expr[0] / expr[2]
+            break
+        case '-':
+            result = expr[0] - expr[2]
+            break
+        default:
+            result = +expr[0] + +expr[2]
+            break
+    }
+    return `${expr.join(' ')} = ${result}`
+}
