@@ -57,3 +57,40 @@ function returnEndOfNumber(num) {
     let ends = ['TH', 'ST', 'ND', 'RD']
     return `${num}-${(num%100-11)*(num%100-19)<=0?ends[0]:num%10<4?ends[num%4]:ends[0]}`
 }
+
+
+
+//#  SOLUTION 3
+
+
+const returnEndOfNumber = n => `${n}-${[,'ST','ND','RD'][n/10%10^1&&n%10]||'TH'}`;
+
+
+//#  SOLUTION 4
+
+
+function returnEndOfNumber(num) {
+    const l1 = String(num).slice(-1)
+    const l2 = String(num).slice(-2)
+    return +l2 > 10 && +l2 < 14 ? num + '-TH' :
+        l1 == "1" ? num + '-ST' :
+        l1 == "2" ? num + '-ND' :
+        l1 == "3" ? num + '-RD' :
+        num + '-TH'
+}
+
+
+//#  SOLUTION 5
+
+
+returnEndOfNumber = (n, s = n.toString()) => `${n}-${(s.length>1&&+s.substr(-2,1)===1?'TH':['ST','ND','RD','TH'].filter((a,i)=>+s.substr(-1)===i+1))}`
+
+
+
+
+//#  SOLUTION 6
+
+
+function returnEndOfNumber(num) {
+    return (num % 100 > 10 && num % 100 < 20) ? num + '-TH' : (num % 10 > 3 ? num + '-TH' : num + '-' + [, 'ST', 'ND', 'RD'][+(('' + num).slice(-1))])
+}
