@@ -1,44 +1,57 @@
-// 7kyu - Complete the Pattern
+/*
 
-// ###Task: You have to write a function pattern which returns the following 
-// Pattern(See Pattern & Examples) upto n number of rows.
+ 7kyu - Complete the Pattern
 
-// Note:Returning the pattern is not the same as Printing the pattern.
-// ####Rules/Note:
+ ###Task: You have to write a function pattern which returns the following 
+ Pattern(See Pattern & Examples) upto n number of rows.
 
-// If n < 1 then it should return "" i.e. empty string.
-// There are no whitespaces in the pattern.
-// ###Pattern:
+ Note:Returning the pattern is not the same as Printing the pattern.
+ ####Rules/Note:
 
-// 1
-// 22
-// 333
-// ....
-// .....
-// nnnnnn
-// ###Examples:
+ If n < 1 then it should return "" i.e. empty string.
+ There are no whitespaces in the pattern.
+ ###Pattern:
 
-// pattern(5):
+ 1
+ 22
+ 333
+ ....
+ .....
+ nnnnnn
+ ###Examples:
 
-// 1
-// 22
-// 333
-// 4444
-// 55555
-// pattern(11):
+ pattern(5):
 
-// 1
-// 22
-// 333
-// 4444
-// 55555
-// 666666
-// 7777777
-// 88888888
-// 999999999
-// 10101010101010101010
-// 1111111111111111111111
-// * Hint: Use \n in string to jump to next line
+ 1
+ 22
+ 333
+ 4444
+ 55555
+ pattern(11):
+
+ 1
+ 22
+ 333
+ 4444
+ 55555
+ 666666
+ 7777777
+ 88888888
+ 999999999
+ 10101010101010101010
+ 1111111111111111111111
+
+ * Hint: Use \n in string to jump to next line
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 function pattern(n){
  let str="";
@@ -51,3 +64,11 @@ function pattern(n){
  }
  return str;
 }
+
+
+
+
+
+
+
+

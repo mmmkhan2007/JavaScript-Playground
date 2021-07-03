@@ -1,23 +1,33 @@
-// 7kyu - Convert the Score
+/*
 
-// You are working at a lower league football stadium and you've been 
-// tasked with automating the scoreboard.
+ 7kyu - Convert the Score
 
-// The referee will shout out the score, you have already set up the 
-// voice recognition module which turns the refs voice into a string, 
-// but the spoken score needs to be converted into an array for the 
-// scoreboard!
+ You are working at a lower league football stadium and you've been 
+ tasked with automating the scoreboard.
 
-// e.g. "The score is four nil" should return [4,0]
+ The referee will shout out the score, you have already set up the 
+ voice recognition module which turns the refs voice into a string, 
+ but the spoken score needs to be converted into an array for the 
+ scoreboard!
 
-// note: The score wont go above 9 goals either side ( [9,9] ), and the 
-// ref won't say the same string every time e.g.
+ e.g. "The score is four nil" should return [4,0]
 
-// "new score: two three"
+ note: The score wont go above 9 goals either side ( [9,9] ), and the 
+ ref won't say the same string every time e.g.
 
-// "two two"
+ "new score: two three"
 
-// "Arsenal just conceded another goal, two nil"
+ "two two"
+
+ "Arsenal just conceded another goal, two nil"
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 function scoreboard(s) {
     const d = { "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "zero": 0, "nil": 0 };
