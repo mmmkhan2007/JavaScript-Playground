@@ -30,6 +30,9 @@
 // crossedwords("GRAPHICAL", "SYNTHESIS")
 // returns the sample at the top.
 
+
+
+
 function crossedwords(str1, str2) {
   let arr = [];
   for (i = 0; i < str2.length; i++) {
