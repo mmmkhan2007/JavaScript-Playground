@@ -1,24 +1,35 @@
-// 7kyu - Bet Payout Calculator
-// You are in charge of handling a series of bets based on coin flips, write a script that accepts the following params:
+/*
 
-// probHeads: an array containing the win multiplier for Heads and the ammount of money currently on Heads
+ 7kyu - Bet Payout Calculator
+ You are in charge of handling a series of bets based on coin flips, write a script that accepts the following params:
 
-// probTails: an array containing the win multiplier for Tails and the ammount of money currently on Tails
+ probHeads: an array containing the win multiplier for Heads and the ammount of money currently on Heads
 
-// outcome: a string, either "Heads" or "Tails" that represents the winning bet
+ probTails: an array containing the win multiplier for Tails and the ammount of money currently on Tails
 
-// and return the proper string out of these 3:
+ outcome: a string, either "Heads" or "Tails" that represents the winning bet
 
-// "The outcome is [X], In total I have to pay [Y]$ to the winner, I broke even!"
-// "The outcome is [X], In total I have to pay [Y]$ to the winner, of which [Z]$ from my own pockets :("
-// "The outcome is [X], In total I have to pay [Y]$ to the winner, I have pocketed [Z]$ !"
-// you pocket all the money in the losing side of the bet, but have to pay out all the money in the winning side multiplied by the multiplier.
+ and return the proper string out of these 3:
 
-// All numbers should be printed with 2 decimal values, for example:
+ "The outcome is [X], In total I have to pay [Y]$ to the winner, I broke even!"
+ "The outcome is [X], In total I have to pay [Y]$ to the winner, of which [Z]$ from my own pockets :("
+ "The outcome is [X], In total I have to pay [Y]$ to the winner, I have pocketed [Z]$ !"
+ you pocket all the money in the losing side of the bet, but have to pay out all the money in the winning side multiplied by the multiplier.
 
-// 10.00$
-// 5.35$
-// 945.10$
+ All numbers should be printed with 2 decimal values, for example:
+
+ 10.00$
+ 5.35$
+ 945.10$
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
+
 
 function calculatePayout(betHeads, betTails, outcome) {
   let payout  = 0, keep = 0;

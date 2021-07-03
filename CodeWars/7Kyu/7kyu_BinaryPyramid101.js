@@ -1,3 +1,5 @@
+
+
 // 7kyu - Binary Pyramid 101
 // Eg: if m=1 and n=4
 
@@ -8,6 +10,7 @@
 // ----
 //  122 // Binary(122) => "1111010"
 // So BinaryPyramid ( 1 , 4 ) should return "1111010" Note: value returned should be in string format
+
 
 
 

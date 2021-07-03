@@ -12,3 +12,5 @@ You have two arrays in this kata, every array contain only unique elements. Your
 
 
 let matchArrays = (v, r) => v.filter(e => r.indexOf(e) != -1).length;
+
+
