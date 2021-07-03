@@ -1,7 +1,17 @@
-// 7kyu - esreveR
+/*
 
-// Write a function reverse which reverses a list 
-// (or in clojure's case, any list-like data structure)
+ 7kyu - esreveR
+
+ Write a function reverse which reverses a list 
+ (or in clojure's case, any list-like data structure)
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 let reverse = function(array) {
     let temp = [];

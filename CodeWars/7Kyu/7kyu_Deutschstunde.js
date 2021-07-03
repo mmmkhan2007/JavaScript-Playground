@@ -1,15 +1,25 @@
-// 7 kyu - Deutschstunde
+/*
 
-// Description:
+ 7 kyu - Deutschstunde
 
-// Everybody knows a little german, right? But remembering the correct articles is a tough job. Write yourself a little helper, that returns the noun with the matching article:
+ Description:
 
-// each noun containing less than 2 vowels has the article "das"
-// each noun containing 2/3 vowels has the article "die"
-// each noun containing more than 3 vowels has the article "der"
-// Caution: Vowels are "a,e,i,o,u". Umlaute (ä ö ü) are also being counted!
+ Everybody knows a little german, right? But remembering the correct articles is a tough job. Write yourself a little helper, that returns the noun with the matching article:
 
-// (This Kata is a joke, there is no such grammar rule!)
+ each noun containing less than 2 vowels has the article "das"
+ each noun containing 2/3 vowels has the article "die"
+ each noun containing more than 3 vowels has the article "der"
+ Caution: Vowels are "a,e,i,o,u". Umlaute (ä ö ü) are also being counted!
+
+ (This Kata is a joke, there is no such grammar rule!)
+
+*/
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 let derDieDas = (function() {
   let vowels = "aeiouäöü";
