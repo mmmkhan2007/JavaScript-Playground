@@ -1,26 +1,37 @@
-// 7kyu - Cogs 2
+/*
 
-// Kata Task
-// See also https://www.codewars.com/kata/cogs
+ 7kyu - Cogs 2
 
-// You are given a list of cogs in a gear train
+ Kata Task
+ See also https://www.codewars.com/kata/cogs
 
-// Each element represents the number of teeth of that cog
+ You are given a list of cogs in a gear train
 
-// e.g. [100, 50, 25] means
+ Each element represents the number of teeth of that cog
 
-// 1st cog has 100 teeth
-// 2nd cog has 50 teeth
-// 3rd cog has 25 teeth
-// If the nth cog rotates clockwise at 1 RPM what is the RPM of the cogs at 
-// each end of the gear train?
+ e.g. [100, 50, 25] means
 
-// Notes
+ 1st cog has 100 teeth
+ 2nd cog has 50 teeth
+ 3rd cog has 25 teeth
+ If the nth cog rotates clockwise at 1 RPM what is the RPM of the cogs at 
+ each end of the gear train?
 
-// return an array whose two elements are RPM of the leftmost and rightmost 
-// cogs respectively
-// use negative numbers for anti-clockwise rotation
-// for convenience n is zero-based
+ Notes
+
+ return an array whose two elements are RPM of the leftmost and rightmost 
+ cogs respectively
+ use negative numbers for anti-clockwise rotation
+ for convenience n is zero-based
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 function cogRpm(c, n) {
     let d = [1, -1];

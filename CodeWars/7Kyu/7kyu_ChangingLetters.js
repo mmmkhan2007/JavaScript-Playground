@@ -1,11 +1,21 @@
-// 7kyu - Changing Letters
+/*
 
-// When provided with a String, capitalize all vowels
+ 7kyu - Changing Letters
+ When provided with a String, capitalize all vowels
 
-// For example:
+/ For example:
 
-// Input : "Hello World!"
+ Input : "Hello World!"
+ Output : "HEllO WOrld!"
 
-// Output : "HEllO WOrld!"
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 let swap = st => st.replace(/[aeiou]/g, s => "AEIOU"["aeiou".indexOf(s)]);
