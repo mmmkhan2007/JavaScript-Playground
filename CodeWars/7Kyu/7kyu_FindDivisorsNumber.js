@@ -1,13 +1,24 @@
-// 7kyu - Find divisors number
+/*
 
-// Find the number of divisors of a positive integer n.
+ 7kyu - Find divisors number
 
-// Example:
+ Find the number of divisors of a positive integer n.
 
-// divisors 4  = 3 -- 1, 2, 4
-// divisors 5  = 2 -- 1, 5
-// divisors 12 = 6 -- 1, 2, 3, 4, 6, 12
-// divisors 30 = 8 -- 1, 2, 3, 5, 6, 10, 15, 30
+ Example:
+
+ divisors 4  = 3 -- 1, 2, 4
+ divisors 5  = 2 -- 1, 5
+ divisors 12 = 6 -- 1, 2, 3, 4, 6, 12
+ divisors 30 = 8 -- 1, 2, 3, 5, 6, 10, 15, 30
+
+*/
+
+
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
+
 
 function getDivisorsCnt(n) {
     let temp = [n];

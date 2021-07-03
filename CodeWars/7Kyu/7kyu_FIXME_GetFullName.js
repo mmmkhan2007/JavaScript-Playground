@@ -1,19 +1,25 @@
-// 7kyu - FIXME: Get Full Name
+/*
 
-// The code provided is supposed return a person's Full Name given their first 
+ 7kyu - FIXME: Get Full Name
 
-// and last names.
+ The code provided is supposed return a person's Full Name given their first 
+ and last names.
 
-// But it's not working properly.
+ But it's not working properly.
 
-// Notes
+ Notes
+ The first and/or last names are never null (None in Python), but may be empty.
 
-// The first and/or last names are never null (None in Python), but may be empty.
+ Task
 
-// Task
+ Fix the bug so we can all go home early.
 
-// Fix the bug so we can all go home early.
+*/
 
+
+//#############################################################
+//#                        MY SOLUTIONS                       #
+//#############################################################
 
 class Dinglemouse{
   constructor( firstName, lastName ){

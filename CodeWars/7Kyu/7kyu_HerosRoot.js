@@ -24,7 +24,6 @@
  You can use Math.floor (or similar) for each integer approximation.
 
  
-
  Note for JavaScript, Coffescript, Typescript:
  Don't use the double bitwise NOT ~~ at each iteration if you want to have the same results as in the tests and the other languages.
 

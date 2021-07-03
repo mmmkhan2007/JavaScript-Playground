@@ -9,18 +9,15 @@ instance of the word with the longest length.
 Example:
 
 'red white blue' //returns string value of white
-
 'red blue gold' //returns gold
 
 */
 
 
 
-
 //#############################################################
 //#                        MY SOLUTIONS                       #
 //#############################################################
-
 
 
 function longestWord(stringOfWords) {
