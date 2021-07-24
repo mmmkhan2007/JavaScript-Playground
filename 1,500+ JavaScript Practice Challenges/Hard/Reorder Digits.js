@@ -113,11 +113,16 @@ function reorderDigits(arr, direction) {
 //#    SOLUTION 5
 //#############################################################
 
-
-
 function reorderDigits(arr, direction) {
-    return arr.map(x => direction === "asc" ?
-        Number(Number(x).toString().split("").sort((a, b) => a > b).join("")) :
-        Number(Number(x).toString().split("").sort((a, b) => a < b).join(""))
-    );
+    let result = []
+    if (direction === 'asc') {
+        arr.forEach(el => {
+            result.push(Number(el.toString().split('').sort().join('')))
+        })
+    } else {
+        arr.forEach(el => {
+            result.push(Number(el.toString().split('').sort().reverse().join('')))
+        })
+    }
+    return result
 }
